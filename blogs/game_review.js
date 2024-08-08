@@ -14,5 +14,5 @@ With hope of seeing his daughter again, Adam proceeded to the old church, heavy 
 Now, facing the harsh reality, he finally understood that it all was just a manifestation of his deep longing for what he had lost and his refusal to accept the grief. Adam knelt in the garden's soil, tears silently streaming down, finally reconciling with his inner demons and accepting the irrevocable losses brought by the war.
 <br></p> 
 
-<div style = "text-align: center;" > <img src="assets/thiswarofmine.jpg" alt="" style="max-width:95%;"> <p>亚当抱着即将死去的女儿艾米莉亚悲痛不已 (Adam held his dying daughter Amelia, overwhelmed with grief.)</p> </div > 
+<div style = "text-align: center;"> <img src="assets/thiswarofmine.jpg" alt="" style="max-width:95%;"> <p>亚当抱着即将死去的女儿艾米莉亚悲痛不已 (Adam held his dying daughter Amelia, overwhelmed with grief.)</p> </div > 
 `;
