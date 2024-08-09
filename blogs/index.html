@@ -40,11 +40,11 @@
         background-color: #f9f9f9;
     } */
 
-        /* .container {
-        /* max-width: 800px; */
+        /* .container { */
+        /* max-width: 1140px; */
         /* margin: 0 auto; */
         /* padding-left: 0px; */
-        /* } */
+        /* }
 
         /* .page-title {
         text-align: center;
@@ -61,14 +61,14 @@
             margin-bottom: 10px;
         }
 
-        .article {
+        .element {
             border: 1px solid #ccc;
             margin-bottom: 10px;
             border-radius: 5px;
             background-color: #fff;
         }
 
-        .header {
+        .element-header {
             background-color: #f4f4f4;
             padding: 10px;
             cursor: pointer;
@@ -128,47 +128,47 @@
             </header>
 
 
-            <div class="container">
+            <!-- <div class="container"> -->
 
-                <div class="category">
-                    <div class="category-title">游戏测评 (Game Review)</div>
+            <div class="category">
+                <div class="category-title">游戏测评 (Game Review)</div>
 
-                    <div class="article">
-                        <div class="header">
-                            <span>这是我的战争 (This War of Mine)</span>
-                            <button class="button" onclick="toggleContent(this, this_war_of_mine)">展开(unfold)</button>
-                        </div>
-                        <div class="content" id="content-1"></div>
+                <div class="element">
+                    <div class="element-header">
+                        <span>这是我的战争 (This War of Mine)</span>
+                        <button class="button" onclick="toggleContent(this, this_war_of_mine)">展开(unfold)</button>
                     </div>
+                    <div class="content" id="content-1"></div>
+                </div>
 
 
-                    <div class="article">
-                        <div class="header">
-                            <span>冰汽时代 (Frostpunk)</span>
-                            <button class="button" onclick="toggleContent(this, frostpunk)">展开(unfold)</button>
-                        </div>
-                        <div class="content" id="content-1"></div>
+                <div class="element">
+                    <div class="element-header">
+                        <span>冰汽时代 (Frostpunk)</span>
+                        <button class="button" onclick="toggleContent(this, frostpunk)">展开(unfold)</button>
                     </div>
+                    <div class="content" id="content-1"></div>
+                </div>
 
-                    <div class="article">
-                        <div class="header">
-                            <span>陷阵之志 (Into the Breach)</span>
-                            <button class="button" onclick="toggleContent(this, into_the_breach)">展开(unfold)</button>
-                        </div>
-                        <div class="content" id="content-1"></div>
+                <div class="element">
+                    <div class="element-header">
+                        <span>陷阵之志 (Into the Breach)</span>
+                        <button class="button" onclick="toggleContent(this, into_the_breach)">展开(unfold)</button>
                     </div>
-
+                    <div class="content" id="content-1"></div>
                 </div>
 
             </div>
 
+            <!-- </div> -->
+
             <script src="game_review.js"></script>
             <script>
-                function toggleContent(button, articleContent) {
+                function toggleContent(button, elementContent) {
                     const content = button.parentElement.nextElementSibling;
                     if (content.style.display === 'none' || content.style.display === '') {
                         content.style.display = 'block';
-                        content.innerHTML = articleContent;
+                        content.innerHTML = elementContent;
                         button.textContent = '收起(fold)';
                     } else {
                         content.style.display = 'none';
