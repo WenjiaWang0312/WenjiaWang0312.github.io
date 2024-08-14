@@ -21,6 +21,22 @@ Now, facing the harsh reality, he finally understood that it all was just a mani
 <h5>后记</h5>
 `;
 const frostpunk = `
+<h5>玩冰汽时代这个游戏时，民众们在极端寒冷的天气下总是对我这个领导者提出各种刁难的要求，包括要求美食、医疗、住房等不断提升的需求。然而当我为了渡过极端情况而实行铁腕统治，树立绝对个人崇拜之后，狂热的民众会开始互相揭发，有一点质疑声立刻被抨击为异端分子。起初我很满意自己的政策可以排除质疑，顺利推行，不需要再照顾所有人的感受。但是后来狂热的人们建立了“刑场”，每天必须吊死一个“忠诚不绝对”的人，让我都觉得有些过火，因为我并不希望有任何人死亡。好在我最后在刑场建立的第二天通关，只牺牲了一个有质疑声的可怜工程师。</h5>
 `
 const into_the_breach = `
+`
+const kingdom_rush_series = `
+`
+
+const black_myth_wukong = `
+`
+const dying_light = `
+`
+const day_gone = `
+`
+const delivery_from_the_pain = `
+`
+const dark_sider_series = `
+`
+const dead_age_2 = `
 `
