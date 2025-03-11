@@ -76,6 +76,12 @@
             /* Space between the text and videos */
         }
 
+        canvas {
+            display: block;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
         video {
             width: 100%;
             /* Make the video fill the block's width */
@@ -272,24 +278,25 @@
             <!-- First video block -->
             <div class="video-block">
                 <div class="text">Result demo1: </div>
-                <video controls>
-                    <source src="demo1.mp4" type="video/mp4">
+                <video controls poster="covers/demo1.png">
+                    <source src="demos/demo1.mp4" type="video/mp4">
 
                 </video>
+
             </div>
             <!-- Second video block -->
             <div class="video-block">
                 <div class="text">Result demo2:</div>
-                <video controls>
-                    <source src="demo2.mp4" type="video/mp4">
+                <video controls poster="covers/demo2.png">
+                    <source src="demos/demo2.mp4" type="video/mp4">
 
                 </video>
             </div>
 
             <div class="video-block">
                 <div class="text">Result Demo3:</div>
-                <video controls>
-                    <source src="demo3.mp4" type="video/mp4">
+                <video controls poster="covers/demo3.png">
+                    <source src="demos/demo3.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -298,22 +305,22 @@
         <div class="video_container is-max-desktop">
             <div class="video-block">
                 <div class="text">Result Demo4:</div>
-                <video controls>
-                    <source src="demo4.mp4" type="video/mp4">
+                <video controls poster="covers/demo4.png">
+                    <source src="demos/demo4.mp4" type="video/mp4">
 
                 </video>
             </div>
             <div class="video-block">
                 <div class="text">Result Demo5:</div>
-                <video controls>
-                    <source src="demo5.mp4" type="video/mp4">
+                <video controls poster="covers/demo5.png">
+                    <source src="demos/demo5.mp4" type="video/mp4">
 
                 </video>
             </div>
             <div class="video-block">
                 <div class="text">Result Demo6:</div>
-                <video controls>
-                    <source src="demo6.mp4" type="video/mp4">
+                <video controls poster="covers/demo6.png">
+                    <source src="demos/demo6.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -324,8 +331,8 @@
         <div class="video_container is-max-desktop">
             <div class="video-block">
                 <div class="text">Result Demo7 (Re-edit demo6):</div>
-                <video controls>
-                    <source src="demo7.mp4" type="video/mp4">
+                <video controls poster="covers/demo7.png">
+                    <source src="demos/demo7.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -347,7 +354,7 @@
             <div class="video-block">
                 <div class="text">Carry</div>
                 <video controls>
-                    <source src="carry.mp4" type="video/mp4">
+                    <source src="skills/carry.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -355,7 +362,7 @@
             <div class="video-block">
                 <div class="text">Idle</div>
                 <video controls>
-                    <source src="idle.mp4" type="video/mp4">
+                    <source src="skills/idle.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -363,7 +370,7 @@
             <div class="video-block">
                 <div class="text">Walk</div>
                 <video controls>
-                    <source src="walk.mp4" type="video/mp4">
+                    <source src="skills/walk.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -371,7 +378,7 @@
             <div class="video-block">
                 <div class="text">Sit</div>
                 <video controls>
-                    <source src="sit.mp4" type="video/mp4">
+                    <source src="skills/sit.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -379,7 +386,7 @@
             <div class="video-block">
                 <div class="text">Lie</div>
                 <video controls>
-                    <source src="lie.mp4" type="video/mp4">
+                    <source src="skills/lie.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -402,7 +409,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char1_LieDown_Side_01</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char1_LieDown_Side_01.mp4" type="video/mp4">
+                    <source src="dataset/char1_LieDown_Side_01.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -410,7 +417,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char1_LieDown_Side_04</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char1_LieDown_Side_04.mp4" type="video/mp4">
+                    <source src="dataset/char1_LieDown_Side_04.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -419,7 +426,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char1_LieDown_Side_06</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char1_LieDown_Side_06.mp4" type="video/mp4">
+                    <source src="dataset/char1_LieDown_Side_06.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -428,7 +435,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char2_Idle_Angry_03</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char2_Idle_Angry_03.mp4" type="video/mp4">
+                    <source src="dataset/char2_Idle_Angry_03.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -439,7 +446,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char2_Idle_Drunk_01</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char2_Idle_Drunk_01.mp4" type="video/mp4">
+                    <source src="dataset/char2_Idle_Drunk_01.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -447,7 +454,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char3_Carry_Careful_01</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char3_Carry_Careful_01.mp4" type="video/mp4">
+                    <source src="dataset/char3_Carry_Careful_01.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -455,7 +462,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char3_Carry_Tired_02</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char3_Carry_Tired_02.mp4" type="video/mp4">
+                    <source src="dataset/char3_Carry_Tired_02.mp4" type="video/mp4">
 
                 </video>
             </div>
@@ -463,7 +470,7 @@
             <div class="video-block">
                 <div class="text" style="font-size: 12px;">char3_Idle_Relax_02</div>
                 <video controls style="width: 150px; height: 200px; object-fit: cover;">
-                    <source src="char3_Idle_Relax_02.mp4" type="video/mp4">
+                    <source src="dataset/char3_Idle_Relax_02.mp4" type="video/mp4">
 
                 </video>
             </div>
