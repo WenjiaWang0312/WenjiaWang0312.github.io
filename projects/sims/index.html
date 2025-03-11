@@ -85,39 +85,40 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-3 publication-title">Zolly: Zoom Focal Length Correctly for
-                            </br>Perspective-Distorted Human Mesh
-                            Reconstruction</br>(ICCV2023 Oral, top 1.8%)</h1>
+                        <h1 class="title is-3 publication-title">SIMS: Simulating Stylized Human-Scene Interactions with
+                            Retrieval-Augmented
+                            Script Generation</br>(Arxiv 2025)</h1>
                         <div class="is-size-5 publication-authors">
 
                             <span class="author-block">
-                                <a href="https://wenjiawang0312.github.io/">Wenjia Wang</a><sup>1,3</sup>
+                                <a href="https://wenjiawang0312.github.io/">Wenjia Wang</a><sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="https://yongtaoge.github.io/">Yongtao Ge</a><sup>2</sup>
+                                <a href="https://liangpan99.github.io/">Liang Pan</a><sup>1,2</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="https://scholar.google.com/citations?user=TOZ9wR4AAAAJ&hl=en">Haiyi
-                                    Mei</a><sup>4</sup>
+                                <a href="https://frank-zy-dou.github.io/">Zhiyang Dou</a><sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="https://caizhongang.github.io/">Zhongang Cai</a><sup>3,4</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-
-                            <br> <span class="author-block">
-                                Qingping Sun</a><sup>4</sup>
+                                Jidong Mei<sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                Yanjun Wang</a><sup>4</sup>
+                                <a href="https://zycliao.com/">Zhouyingcheng Liao</a><sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="https://cshen.github.io/">Chunhua Shen</a><sup>5</sup>
+                                <a href="https://thorin666.github.io/">Yuke Lou</a><sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="http://yanglei.me/">Lei Yang</a><sup>3,4&dagger;</sup>
+                                <a href="https://littlecobber.github.io/">Yifan Wu</a><sup>1</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                             <span class="author-block">
-                                <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a><sup>1</sup>
+                                <a href="http://yanglei.me/">Lei Yang</a><sup>2</sup>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="author-block">
+                                <a href="https://wangjingbo1219.github.io/">Jingbo Wang</a><sup>2,&dagger;</sup>
+                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="author-block">
+                                <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a><sup>1,&dagger;</sup>
                             </span>&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
 
@@ -126,13 +127,7 @@
                             <!-- style="display: block; margin: auto; width: 100%; text-align: center;font-size:1.5em;"> -->
                             <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block"><sup>2</sup>The University of Adelaide</span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-
-                            <br />
                             <span class="author-block"><sup>3</sup>Shanghai AI Laboratory</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block"><sup>4</sup>SenseTime Research</span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block"><sup>5</sup>Zhejiang University</span>
                         </div>
                         <p style="font-size: 9pt;">(&dagger;:corresponding author. <br>This work is partially done
                             during Wenjia
@@ -218,7 +213,7 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <img src="zolly_teaser.png" width="80%" alt="Your Image" style="display: block; margin: auto;">
+                <img src="sims_teaser.png" width="80%" alt="Your Image" style="display: block; margin: auto;">
             </div>
         </div>
     </section>
@@ -232,41 +227,26 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p>
-                            As it is hard to calibrate single-view RGB images in the wild, existing 3D human mesh
-                            reconstruction (3DHMR) methods either use a
-                            constant large focal length or estimate one based on the background environment context,
-                            which can not
-                            tackle the problem of the torso,
-                            limb, hand or face distortion caused by perspective camera projection when the camera is
-                            close to the
-                            human body. The naive focal length
-                            assumptions can harm this task with the incorrectly formulated projection matrices.
-                        </p>
-                        <p>To solve this, we
-                            propose Zolly, the first 3DHMR
-                            method focusing on perspective-distorted images. Our approach begins with analysing the
-                            reason for
-                            perspective distortion, which we
-                            find is mainly caused by the relative location of the human body to the camera center. We
-                            propose a new
-                            camera model and a novel 2D
-                            representation, termed distortion image, which describes the 2D dense distortion scale of
-                            the human
-                            body. We then estimate the distance
-                            from distortion scale features rather than environment context features. Afterwards, We
-                            integrate the
-                            distortion feature with image
-                            features to reconstruct the body mesh. To formulate the correct projection matrix and locate
-                            the human
-                            body position, we simultaneously
-                            use perspective and weak-perspective projection loss. Since existing datasets could not
-                            handle this
-                            task, we propose the first synthetic
-                            dataset PDHuman and extend two real-world datasets tailored for this task, all containing
-                            perspective-distorted human images. Extensive
-                            experiments show that Zolly outperforms existing state-of-the-art methods on both
-                            perspective-distorted
-                            datasets and the standard benchmark (3DPW).
+                            Simulating stylized human-scene interactions (HSI) in physical environments is a challenging
+                            yet fascinating task. Prior works emphasize long-term execution but fall short in achieving
+                            both diverse style and physical plausibility.
+                            To tackle this challenge, we introduce a novel hierarchical framework named SIMS that
+                            seamlessly bridges high-level script-driven intent with a low-level control policy, enabling
+                            more expressive and diverse human-scene interactions. Specifically, we employ Large Language
+                            Models with Retrieval-Augmented Generation (RAG) to generate coherent and diverse long-form
+                            scripts, providing a rich foundation for motion planning. A versatile multi-condition
+                            physics-based control policy is also developed, which leverages text embeddings from the
+                            generated scripts to encode stylistic cues, simultaneously perceiving environmental
+                            geometries and accomplishing task goals. By integrating the retrieval-augmented script
+                            generation with the multi-condition controller, our approach provides a unified solution for
+                            generating stylized HSI motions. We further introduce a comprehensive planning dataset
+                            produced by RAG and a stylized motion dataset featuring diverse locomotions and
+                            interactions. Extensive experiments demonstrate SIMS's effectiveness in executing various
+                            tasks and generalizing across different scenarios, significantly outperforming previous
+                            methods.
+                            Project page:
+
+
                         </p>
                     </div>
 
@@ -276,23 +256,15 @@
         </div>
     </section>
 
-    <section class="Acknowledge">
-        <div class="container is-max-desktop content">
-            <h2 class="title is-3">Acknowledge</h2>
-            PDHuman dataset is rendered based on the pipeline of <a href="https://github.com/openxrlab/xrfeitoria"
-                target="_blank" rel="noopener noreferrer">XRFeitoria</a>.
-        </div>
-
-    </section>
-
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
             <h2 class="title">BibTeX</h2>
-            <pre><code>@article{wang2023zolly,
-  author    = {Wang, Wenjia and Ge, Yongtao and Mei, Haiyi and Cai, Zhongang and Sun, Qingping and Wang, Yanjun and Shen, Chunhua and Yang, Lei and Komura, Taku},
-  title     = {Zolly: Zoom Focal Length Correctly for Perspective-Distorted Human Mesh Reconstruction},
-  journal   = {ICCV},
-  year      = {2023},
+            <pre><code>@article{wang2025sims,
+  author    = {Wang, Wenjia and Pan, Liang and Dou, Zhiyang and Mei, Jidong and Liao, Zhouyingcheng and Lou, Yuke and Wu, Yifan and Yang, Lei and Wang, Jingbo and Komura, Taku},
+  title     = {SIMS: Simulating Stylized Human-Scene Interactions with Retrieval-Augmented
+    Script Generation.},
+  journal   = {Arxiv.},
+  year      = {2025},
 }</code></pre>
         </div>
     </section>
