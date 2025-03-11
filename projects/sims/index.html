@@ -3,14 +3,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Zolly: Zoom Focal Length Correctly<br>for
-    Perspective-Distorted Human<br>Mesh
-    Reconstruction (ICCV2023 oral)">
+    <meta name="description"
+        content="SIMS: Simulating Stylized Human-Scene Interactions<br> with Retrieval-Augmented Script Generation">
     <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Zolly: Zoom Focal Length Correctly<br>for
-        Perspective-Distorted Human<br>Mesh
-        Reconstruction</title>
+    <title>SIMS: Simulating Stylized Human-Scene Interactions<br> with Retrieval-Augmented Script Generation</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -41,106 +38,147 @@
     <script src="../..//js/bulma-carousel.min.js"></script>
     <script src="../../js/bulma-slider.min.js"></script>
     <script src="../../js/index.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Section</title>
+    <style>
+        .video_container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .video-block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 48%;
+            /* Each block takes up 48% of the width */
+        }
+
+        .video-block .text {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .centered-text {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 30px;
+            /* Space between the text and videos */
+        }
+
+        video {
+            width: 100%;
+            /* Make the video fill the block's width */
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 
 <body>
-
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+        <div class="navbar-brand"><a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"><span
+                    aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></a></div>
         <div class="navbar-menu">
-            <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-                <a class="navbar-item" href="https://keunhong.com">
-                    <span class="icon">
-                        <i class="fas fa-home"></i>
-                    </span>
-                </a>
-
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Related Research
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="https://caizhongang.github.io/projects/HuMMan/">
-                            HuMMan
-                        </a>
-                        <a class="navbar-item" href="https://yongtaoge.github.io/projects/humanwild/">
-                            HumanWild
-                        </a>
-                        <a class="navbar-item" href="https://wenjiawang0312.github.io/projects/zolly">
-                            Zolly
-                        </a>
-                        <a class="navbar-item" href="">
-                            TokenHSI
-                        </a>
-                    </div>
+            <div class="navbar-start" style="flex-grow: 1; justify-content: center;"><a class="navbar-item"
+                    href="https://keunhong.com"><span class="icon"><i class="fas fa-home"></i></span></a>
+                <div class="navbar-item has-dropdown is-hoverable"><a class="navbar-link">Related Research </a>
+                    <div class="navbar-dropdown"><a class="navbar-item"
+                            href="https://caizhongang.github.io/projects/HuMMan/">HuMMan </a><a class="navbar-item"
+                            href="https://yongtaoge.github.io/projects/humanwild/">HumanWild </a><a class="navbar-item"
+                            href="https://wenjiawang0312.github.io/projects/zolly">Zolly </a><a class="navbar-item"
+                            href="">TokenHSI </a></div>
                 </div>
             </div>
-
         </div>
     </nav>
-
-
     <section class="hero">
         <div class="hero-body">
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-3 publication-title">SIMS: Simulating Stylized Human-Scene Interactions with
-                            Retrieval-Augmented
-                            Script Generation</br>(Arxiv 2025)</h1>
-                        <div class="is-size-5 publication-authors">
-
-                            <span class="author-block">
-                                <a href="https://wenjiawang0312.github.io/">Wenjia Wang</a><sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://liangpan99.github.io/">Liang Pan</a><sup>1,2</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://frank-zy-dou.github.io/">Zhiyang Dou</a><sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                Jidong Mei<sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://zycliao.com/">Zhouyingcheng Liao</a><sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <h1 class="title is-3 publication-title">SIMS: Simulating Stylized Human-Scene Interactions<br>
+                            with
+                            Retrieval-Augmented Script Generation</br>(Arxiv 2025)</h1>
+                        <div class="is-size-5 publication-authors"><span class="author-block"><a
+                                    href="https://wenjiawang0312.github.io/">Wenjia Wang</a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://liangpan99.github.io/">Liang Pan</a><sup>1,
+                                    2</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://frank-zy-dou.github.io/">Zhiyang
+                                    Dou</a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://blusque.github.io/">Jidong Mei
+                                </a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
                             <br>
-                            <span class="author-block">
-                                <a href="https://thorin666.github.io/">Yuke Lou</a><sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://littlecobber.github.io/">Yifan Wu</a><sup>1</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="http://yanglei.me/">Lei Yang</a><sup>2</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://wangjingbo1219.github.io/">Jingbo Wang</a><sup>2,&dagger;</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block">
-                                <a href="https://i.cs.hku.hk/~taku/">Taku Komura</a><sup>1,&dagger;</sup>
-                            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="author-block"><a href="https://zycliao.com/">Zhouyingcheng
+                                    Liao</a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://thorin666.github.io/">Yuke
+                                    Lou</a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://littlecobber.github.io/">Yifan
+                                    Wu</a><sup>1</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="http://yanglei.me/">Lei
+                                    Yang</a><sup>2</sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://wangjingbo1219.github.io/">Jingbo
+                                    Wang</a><sup>2,
+                                    &dagger;
+                                </sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <span class="author-block"><a href="https://i.cs.hku.hk/~taku/">Taku Komura</a><sup>1,
+                                    &dagger;
+                                </sup></span>&nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
                         </div>
-
-
                         <div class="is-size-6 publication-authors">
-                            <!-- style="display: block; margin: auto; width: 100%; text-align: center;font-size:1.5em;"> -->
-                            <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
-                            &nbsp;&nbsp;&nbsp;&nbsp;
-                            <span class="author-block"><sup>2</sup>Shanghai AI Laboratory</span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <p style="display: block; margin: auto; width: 100%; text-align: center;font-size:1.5em;">
+
+                                <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <span class="author-block"><sup>2</sup>Shanghai AI
+                                    Laboratory</span>&nbsp;&nbsp;&nbsp;&nbsp;
                         </div>
-                        <p style="font-size: 9pt;">(&dagger;:corresponding author. </p>
+                        <p style="font-size: 9pt;">(&dagger;:equal advising.) </p>
                         <div class="column has-text-centered">
                             <div class="publication-links">
                                 <!-- PDF Link. -->
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Zolly_Zoom_Focal_Length_Correctly_for_Perspective-Distorted_Human_Mesh_Reconstruction_ICCV_2023_paper.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -148,8 +186,9 @@
                                         </span>
                                         <span>Paper</span>
                                     </a>
-                                </span>
-                                <span class="link-block">
+                                </span> -->
+                                <!-- Supp -->
+                                <!-- <span class="link-block">
                                     <a href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Wang_Zolly_Zoom_Focal_ICCV_2023_supplemental.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -157,9 +196,10 @@
                                         </span>
                                         <span>Supp</span>
                                     </a>
-                                </span>
+                                </span> -->
+                                <!-- arxiv -->
                                 <span class="link-block">
-                                    <a href="https://arxiv.org/abs/2303.13796"
+                                    <a href="https://arxiv.org/abs/2411.19921"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
@@ -167,8 +207,8 @@
                                         <span>arXiv</span>
                                     </a>
                                 </span>
-                                <!-- Video Link. -->
-                                <span class="link-block">
+                                <!-- poster Link. -->
+                                <!-- <span class="link-block">
                                     <a href="zolly_poster_compressed.pdf"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
@@ -176,7 +216,7 @@
                                         </span>
                                         <span>Poster</span>
                                     </a>
-                                </span>
+                                </span> -->
                                 <!-- <span class="link-block">
                   <a href="" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -186,24 +226,24 @@
                   </a>
                 </span> -->
                                 <!-- Code Link. -->
-                                <span class="link-block">
-                                    <a href="https://github.com/WenjiaWang0312/Zolly"
+                                <!-- <span class="link-block">
+                                    <a href="https://wenjiawang0312.github.io/projects/sims/"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Code</span>
                                     </a>
-                                </span>
+                                </span> -->
                                 <!-- Dataset Link. -->
-                                <span class="link-block">
+                                <!-- <span class="link-block">
                                     <a href="https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wwj2022_connect_hku_hk/EjwloRJZtVBBrgliQ76EP6YBMtVQ5G_D4TPo2n18CAwOyw"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="far fa-images"></i>
                                         </span>
-                                        <span>Data</span>
-                                    </a>
+                                        <span>Data</span> -->
+                                </a>
                             </div>
 
                         </div>
@@ -216,11 +256,229 @@
     <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <img src="sims_teaser.png" width="80%" alt="Your Image" style="display: block; margin: auto;">
+                <img src="sims_teaser.png" width="100%" alt="Your Image" style="display: block; margin: auto;">
             </div>
         </div>
     </section>
 
+
+    <section class="hero">
+
+        <div class="centered-text">
+            The insteresting long demos generated by our method<br>(the emojis and sound effects were added in
+            post-production):
+        </div>
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+            <div class="video-block">
+                <div class="text">Result demo1: </div>
+                <video controls>
+                    <source src="demo1.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <!-- Second video block -->
+            <div class="video-block">
+                <div class="text">Result demo2:</div>
+                <video controls>
+                    <source src="demo2.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text">Result Demo3:</div>
+                <video controls>
+                    <source src="demo3.mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+
+        <div class="video_container is-max-desktop">
+            <div class="video-block">
+                <div class="text">Result Demo4:</div>
+                <video controls>
+                    <source src="demo4.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="video-block">
+                <div class="text">Result Demo5:</div>
+                <video controls>
+                    <source src="demo5.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <div class="video-block">
+                <div class="text">Result Demo6:</div>
+                <video controls>
+                    <source src="demo6.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+
+        </div>
+
+        <div class="video_container is-max-desktop">
+            <div class="video-block">
+                <div class="text">Result Demo7 (Re-edit demo6):</div>
+                <video controls>
+                    <source src="demo7.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="hero">
+        <br>
+        <br>
+        <br>
+        <div class="centered-text">
+            Single skill demos:
+        </div>
+
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+            <div class="video-block">
+                <div class="text">Carry</div>
+                <video controls>
+                    <source src="carry.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <!-- Second video block -->
+            <div class="video-block">
+                <div class="text">Idle</div>
+                <video controls>
+                    <source src="idle.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text">Walk</div>
+                <video controls>
+                    <source src="walk.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text">Sit</div>
+                <video controls>
+                    <source src="sit.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text">Lie</div>
+                <video controls>
+                    <source src="lie.mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="hero">
+        <br>
+        <br>
+        <br>
+        <div class="centered-text">
+            Dataset demos (SMPL-X skeleton):
+        </div>
+
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char1_LieDown_Side_01</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char1_LieDown_Side_01.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char1_LieDown_Side_04</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char1_LieDown_Side_04.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char1_LieDown_Side_06</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char1_LieDown_Side_06.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char2_Idle_Angry_03</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char2_Idle_Angry_03.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+
+        </div>
+        <div class="video_container is-max-desktop">
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char2_Idle_Drunk_01</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char2_Idle_Drunk_01.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char3_Carry_Careful_01</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char3_Carry_Careful_01.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char3_Carry_Tired_02</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char3_Carry_Tired_02.mp4" type="video/mp4">
+
+                </video>
+            </div>
+
+            <div class="video-block">
+                <div class="text" style="font-size: 12px;">char3_Idle_Relax_02</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char3_Idle_Relax_02.mp4" type="video/mp4">
+
+                </video>
+            </div>
+            <!-- 
+            <div class="video-block">
+                <div class="text">char3_LieDown_lieflat_01</div>
+                <video controls style="width: 150px; height: 200px; object-fit: cover;">
+                    <source src="char3_LieDown_lieflat_01.mp4" type="video/mp4">
+
+                </video>
+            </div> -->
+
+        </div>
+
+    </section>
 
     <section class="section">
         <div class="container is-max-desktop">
@@ -247,7 +505,6 @@
                             interactions. Extensive experiments demonstrate SIMS's effectiveness in executing various
                             tasks and generalizing across different scenarios, significantly outperforming previous
                             methods.
-                            Project page:
 
 
                         </p>
@@ -258,6 +515,19 @@
 
         </div>
     </section>
+
+
+    <div class="centered-text">
+        Pipeline Overview
+    </div>
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <img src="pipeline.png" width="100%" alt="Your Image" style="display: block; margin: auto;">
+            </div>
+        </div>
+    </section>
+
 
     <section class="section" id="BibTeX">
         <div class="container is-max-desktop content">
