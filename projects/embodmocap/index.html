@@ -160,7 +160,7 @@
                             <p style="display: block; margin: auto; width: 100%; text-align: center;font-size:1.5em;">
 
                                 <span class="author-block"><sup>1</sup>The University of Hong Kong</span>
-                                <span class="author-block"><sup>2</sup>The University of Tampere</span>
+                                <span class="author-block"><sup>2</sup>Tampere University</span>
                         </div>
                         <p style="font-size: 9pt;"></p>
                         <div class="column has-text-centered">
@@ -240,15 +240,13 @@
         </div>
     </section>
 
-    <!-- <section class="hero teaser">
+    <section class="hero teaser">
         <div class="container is-max-desktop">
             <div class="hero-body">
-                <img src="sims_teaser.png" width="100%" alt="Your Image" style="display: block; margin: auto;">
+                <img src="embodmocap_teaser.png" width="100%" alt="Your Image" style="display: block; margin: auto;">
             </div>
         </div>
-    </section> -->
-
-
+    </section>
 
 
     <br>
@@ -262,7 +260,7 @@
         <div class="video_container is-max-desktop">
             <!-- First video block -->
             <div class="video-block">
-                <div class="text">Captured Seq 0505step2_seq0: </div>
+                <div class="text">Captured Seq<br> 0505step2_seq0: </div>
                 <video controls poster="captured_dataset/0505step2_seq0.mp4" data-volume="0.5">
                     <source src="captured_dataset/0505step2_seq0.mp4" type="video/mp4">
 
@@ -271,7 +269,7 @@
             </div>
             <!-- Second video block -->
             <div class="video-block">
-                <div class="text">Captured Seq 0615stairs1_seq3:</div>
+                <div class="text">Captured Seq<br> 0615stairs1_seq3:</div>
                 <video controls poster="captured_dataset/0615stairs1_seq3.mp4" data-volume="0.5">
                     <source src="captured_dataset/0615stairs1_seq3.mp4" type="video/mp4">
 
@@ -279,7 +277,7 @@
             </div>
 
             <div class="video-block">
-                <div class="text">Captured Seq 0618stair1_seq0:</div>
+                <div class="text">Captured Seq<br> 0618stair1_seq0:</div>
                 <video controls poster="captured_dataset/0618stair1_seq0.mp4" data-volume="0.5">
                     <source src="captured_dataset/0618stair1_seq0.mp4" type="video/mp4">
 
@@ -291,14 +289,14 @@
 
         <div class="video_container is-max-desktop">
             <div class="video-block">
-                <div class="text">Captured Seq 0902bedroom1_seq8:</div>
+                <div class="text">Captured Seq<br> 0902bedroom1_seq8:</div>
                 <video controls poster="captured_dataset/0902bedroom1_seq8.mp4g" data-volume="0.5">
                     <source src="captured_dataset/0902bedroom1_seq8.mp4" type="video/mp4">
 
                 </video>
             </div>
             <div class="video-block">
-                <div class="text">Captured Seq 0914livingroom1_seq13:</div>
+                <div class="text">Captured Seq<br> 0914livingroom1_seq13:</div>
                 <video controls poster="captured_dataset/0914livingroom1_seq13.mp4" data-volume="0.5">
                     <source src="captured_dataset/0914livingroom1_seq13.mp4" type="video/mp4">
 
@@ -325,7 +323,7 @@
         <div class="video_container is-max-desktop">
             <!-- First video block -->
             <div class="video-block">
-                <div class="text">Captured Seq 0505step2_seq0: </div>
+                <div class="text">Scene Aware Tracking<br> 0505step2_seq0: </div>
                 <video controls poster="motion_tracking/track_a.mp4" data-volume="0.5">
                     <source src="motion_tracking/track_a.mp4" type="video/mp4">
 
@@ -334,7 +332,7 @@
             </div>
             <!-- Second video block -->
             <div class="video-block">
-                <div class="text">Captured Seq 0615stairs1_seq3:</div>
+                <div class="text">Scene Aware Tracking<br> 0615stairs1_seq3:</div>
                 <video controls poster="motion_tracking/track_b.mp4" data-volume="0.5">
                     <source src="motion_tracking/track_b.mp4" type="video/mp4">
 
@@ -348,20 +346,19 @@
 
         <div class="video_container is-max-desktop">
             <div class="video-block">
-                <div class="text">Captured Seq 0902bedroom1_seq8:</div>
+                <div class="text">Scene Aware Tracking<br> 0902bedroom1_seq8:</div>
                 <video controls poster="motion_tracking/track_c.mp4" data-volume="0.5">
                     <source src="motion_tracking/track_c.mp4" type="video/mp4">
 
                 </video>
             </div>
             <div class="video-block">
-                <div class="text">Captured Seq 0914livingroom1_seq13:</div>
+                <div class="text">Scene Aware Tracking<br> 0914livingroom1_seq13:</div>
                 <video controls poster="motion_tracking/track_d.mp4" data-volume="0.5">
                     <source src="motion_tracking/track_d.mp4" type="video/mp4">
 
                 </video>
             </div>
-
 
 
         </div>
@@ -375,15 +372,15 @@
     <section class="hero">
 
         <div class="centered-text">
-            Motion tracking results:<div class="text" style="font-size: 18px;"></div>
+            HOI Skill results:<div class="text" style="font-size: 18px;"></div>
         </div>
 
         <div class="video_container is-max-desktop">
             <!-- First video block -->
             <div class="video-block">
                 <div class="text">Climb monocular data: </div>
-                <video controls poster="hoi_skills/climb_gvhmr.mp4" data-volume="0.5">
-                    <source src="hoi_skills/climb_gvhmr.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/climb_gvhmr_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/climb_gvhmr_converted.mp4" type="video/mp4">
 
                 </video>
 
@@ -391,16 +388,16 @@
             <!-- Second video block -->
             <div class="video-block">
                 <div class="text">Climb opticalmocap data: </div>
-                <video controls poster="hoi_skills/climb_optical.mp4" data-volume="0.5">
-                    <source src="hoi_skills/climb_optical.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/climb_optical_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/climb_optical_converted.mp4" type="video/mp4">
 
                 </video>
 
             </div>
             <div class="video-block">
                 <div class="text">Climb our data: </div>
-                <video controls poster="hoi_skills/climb_ours.mp4" data-volume="0.5">
-                    <source src="hoi_skills/climb_ours.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/climb_ours_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/climb_ours_converted.mp4" type="video/mp4">
 
                 </video>
 
@@ -414,8 +411,8 @@
             <!-- First video block -->
             <div class="video-block">
                 <div class="text">Sit monocular data: </div>
-                <video controls poster="hoi_skills/sit_gvhmr.mp4" data-volume="0.5">
-                    <source src="hoi_skills/sit_gvhmr.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/sit_gvhmr_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/sit_gvhmr_converted.mp4" type="video/mp4">
 
                 </video>
 
@@ -423,16 +420,16 @@
             <!-- Second video block -->
             <div class="video-block">
                 <div class="text">Sit opticalmocap data: </div>
-                <video controls poster="hoi_skills/sit_optical.mp4" data-volume="0.5">
-                    <source src="hoi_skills/sit_optical.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/sit_optical_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/sit_optical_converted.mp4" type="video/mp4">
 
                 </video>
 
             </div>
             <div class="video-block">
                 <div class="text">Sit our data: </div>
-                <video controls poster="hoi_skills/sit_ours.mp4" data-volume="0.5">
-                    <source src="hoi_skills/sit_ours.mp4" type="video/mp4">
+                <video controls poster="hoi_skills_converted/sit_ours_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/sit_ours_converted.mp4" type="video/mp4">
 
                 </video>
 
@@ -441,6 +438,77 @@
         </div>
         <br>
 
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+            <div class="video-block">
+                <div class="text">Prone monocular data: </div>
+                <video controls poster="hoi_skills_converted/prone_gvhmr_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/prone_gvhmr_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+            <!-- Second video block -->
+
+            <div class="video-block">
+                <div class="text">Prone our data: </div>
+                <video controls poster="hoi_skills_converted/prone_ours_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/prone_ours_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+            <div class="video-block">
+                <div class="text">Support monocular data: </div>
+                <video controls poster="hoi_skills_converted/support_gvhmr_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/support_gvhmr_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+            <!-- Second video block -->
+
+            <div class="video-block">
+                <div class="text">Support our data: </div>
+                <video controls poster="hoi_skills_converted/support_ours_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/support_ours_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+        </div>
+        <br>
+
+
+        <div class="video_container is-max-desktop">
+            <!-- First video block -->
+            <div class="video-block">
+                <div class="text">Support2 monocular data: </div>
+                <video controls poster="hoi_skills_converted/support2_gvhmr_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/support2_gvhmr_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+            <!-- Second video block -->
+
+            <div class="video-block">
+                <div class="text">Support2 our data: </div>
+                <video controls poster="hoi_skills_converted/support2_ours_converted.mp4" data-volume="0.5">
+                    <source src="hoi_skills_converted/support2_ours_converted.mp4" type="video/mp4">
+
+                </video>
+
+            </div>
+
+        </div>
     </section>
 
 
