@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors</title>
+    <meta
+      name="description"
+      content="Project page template adapted from EgoGrasp / Nerfies style."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <h1>AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors</h1>
+
+        <div class="authors">
+          <span class="author-name">Xiaozhen Qiao<sup>1,*</sup></span>
+          <span class="author-name">Wenjia Wang<sup>2,*,&dagger;</sup></span>
+          <span class="author-name">Zhiyuan Zhao<sup>1</sup></span>
+          <span class="author-name">Jiacheng Sun<sup>3</sup></span>
+          <span class="author-name">Ping Luo<sup>2</sup></span>
+          <span class="author-name">Hongyuan Zhang<sup>1,2,&Dagger;</sup></span>
+          <span class="author-name">Xuelong Li<sup>1,&Dagger;</sup></span>
+        </div>
+
+        <p class="affiliations">
+          <span><sup>1</sup> Institute of Artificial Intelligence (TeleAI), China Telecom, P. R. China</span>
+          <span><sup>2</sup> University of Hong Kong</span>
+          <span><sup>3</sup> Huawei Technologies Co., Ltd.</span>
+        </p>
+
+        <p class="author-note">
+          <sup>*</sup> Equal Contribution.
+          <sup>&dagger;</sup> Project Lead.
+          <sup>&Dagger;</sup> Corresponding Authors.
+        </p>
+
+        <div class="button-row">
+          <!-- TODO: Replace with your real links -->
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Paper</a>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">arXiv</a>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Code (Comming soon)</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container narrow">
+          <figure class="media-card">
+            <img src="assets/images/teaser.svg" alt="Teaser image" />
+            <figcaption class="latex-source">\textbf{(a)} AHAP achieves 180$\times$ speedup over optimization-based HSfM while maintaining competitive accuracy. \textbf{(b)} Results on EgoHumans. \textbf{(c)} Results on EgoExo4D.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Abstract</h2>
+          <p class="latex-source abstract-body">Reconstructing 3D humans from images captured at multiple perspectives typically requires pre-calibration, like using checkerboards or MVS algorithms, which limits scalability and applicability in diverse real-world scenarios. In this work, we present \textbf{\ours{}} (Reconstructing \textbf{A}rbitrary \textbf{H}umans from \textbf{A}rbitrary \textbf{P}erspectives), a feed-forward framework for reconstructing arbitrary humans from arbitrary camera perspectives without requiring camera calibration. Our core lies in the effective fusion of multi-view geometry to assist human association, reconstruction and localization. Specifically, we use a Cross-View Identity Association module through learnable person queries and soft assignment, supervised by contrastive learning to resolve cross-view human identity association. A Human Head fuses cross-view features and scene context for SMPL prediction, guided by cross-view reprojection losses to enforce body pose consistency. Additionally, multi-view geometry eliminates the depth ambiguity inherent in monocular methods, providing more precise 3D human localization through multi-view triangulation. Experiments on EgoHumans and EgoExo4D demonstrate that \ours{} achieves competitive performance on both world-space human reconstruction and camera pose estimation, while being 180$\times$ faster than optimization-based approaches. \end{abstract}</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Method Overview</h2>
+          <figure class="media-card">
+            <img src="assets/images/method.svg" alt="Method overview" />
+            <figcaption class="latex-source">\textbf{Overall pipeline of \ours{}.}
+Given multi-view images, the scene encoder estimates scene geometry and camera poses, while the human encoder extracts human-centric features.
+Our cross-view identity association module matches the same person across views via learnable queries. The human head fuses scene tokens, aggregated tokens, and reference view tokens through a multi-view fusion decoder to predict SMPL parameters. Finally, we align humans and scene point clouds via scale alignment and multi-view triangulation for precise human localization.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Video Demonstrations</h2>
+          <div class="demo-grid">
+            <article class="demo-card">
+              <video controls autoplay muted loop playsinline preload="auto">
+                <source src="assets/videos/demo1.mov" />
+              </video>
+              <p>Demo 1.</p>
+            </article>
+            <article class="demo-card">
+              <video controls autoplay muted loop playsinline preload="auto">
+                <source src="assets/videos/demo2.mov" />
+              </video>
+              <p>Demo 2.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Qualitative Results</h2>
+          <figure class="result-card result-single">
+            <img src="assets/images/result.svg" alt="Qualitative results overview" />
+            <figcaption class="latex-source">\textbf{Qualitative results.} Visualization of human-scene reconstruction on EgoHumans and EgoExo4D. AHAP produces accurate human meshes within reconstructed scenes, maintaining consistent identity association across views.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>BibTeX</h2>
+          <pre><code>@misc{qiao2026ahap,
+  title      = {AHAP: Reconstructing Arbitrary Humans from Arbitrary Perspectives with Geometric Priors},
+  author     = {Xiaozhen Qiao and Wenjia Wang and Zhiyuan Zhao and Jiacheng Sun and Ping Luo and Hongyuan Zhang and Xuelong Li}
+}</code></pre>
+        </div>
+      </section>
+<!-- 
+      <section class="section">
+        <div class="container narrow">
+          <h2>Acknowledgement</h2>
+          <p>
+            We thank collaborators, institutions, and reviewers for their support and valuable
+            feedback.
+          </p>
+        </div>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <div class="container narrow">
+        <p>
+          This website is licensed under a
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">
+            Creative Commons Attribution-ShareAlike 4.0 International License
+          </a>.
+        </p>
+        <p>Template style adapted from EgoGrasp and Nerfies project pages.</p>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        const convertLatexLikeText = (element) => {
+          let html = element.innerHTML;
+          html = html.replace(/\\ours\{\}/g, '<span class="macro-ours">AHAP</span>');
+          html = html.replace(/\\textbf\{([^{}]+)\}/g, "<strong>$1</strong>");
+          html = html.replace(/~\\cite\{([^}]+)\}/g, ' [<span class="cite-key">$1</span>]');
+          html = html.replace(/\\cite\{([^}]+)\}/g, '[<span class="cite-key">$1</span>]');
+          html = html.replace(/~/g, " ");
+          html = html.replace(/\$\\times\$/g, "&times;");
+          html = html.replace(/\\end\{abstract\}/g, "");
+          html = html.replace(/\n\s*/g, " ");
+          html = html.replace(/\s{2,}/g, " ").trim();
+          element.innerHTML = html;
+        };
+
+        document.querySelectorAll(".latex-source").forEach(convertLatexLikeText);
+
+        const emphasizeProjectName = () => {
+          const textNodes = [];
+          const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+          let currentNode = walker.nextNode();
+
+          while (currentNode) {
+            const parent = currentNode.parentElement;
+            const blocked =
+              !parent ||
+              parent.closest("script, style, title, textarea") ||
+              parent.closest(".macro-ours");
+            if (!blocked && /\bAHAP\b/.test(currentNode.nodeValue)) {
+              textNodes.push(currentNode);
+            }
+            currentNode = walker.nextNode();
+          }
+
+          textNodes.forEach((node) => {
+            const text = node.nodeValue;
+            const parts = text.split(/\bAHAP\b/g);
+            const fragment = document.createDocumentFragment();
+            parts.forEach((part, index) => {
+              if (part) {
+                fragment.appendChild(document.createTextNode(part));
+              }
+              if (index < parts.length - 1) {
+                const strong = document.createElement("strong");
+                strong.className = "macro-ours project-token";
+                strong.textContent = "AHAP";
+                fragment.appendChild(strong);
+              }
+            });
+            node.parentNode.replaceChild(fragment, node);
+          });
+        };
+
+        emphasizeProjectName();
+      })();
+    </script>
+  </body>
+</html>
