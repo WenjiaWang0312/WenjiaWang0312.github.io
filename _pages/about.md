@@ -54,10 +54,5 @@ redirect_from:
 <section class="home-section home-section--scope">
   <h2>Research Scope</h2>
   <p>My recent work broadly falls into two streams: <strong>Real2Sim</strong> and <strong>Sim2Real</strong>.</p>
-  <p>Representative topics from the current homepage include:</p>
-  <ul>
-    <li><strong>Real2Sim</strong>: EmbodMocap, AHAP, EgoGrasp, and related human-scene understanding tasks</li>
-    <li><strong>Sim2Real</strong>: SIMS, multimodal human-object interaction, and controllable human motion generation</li>
-  </ul>
   <img src="/images/scope.png" alt="Research scope" />
 </section>
