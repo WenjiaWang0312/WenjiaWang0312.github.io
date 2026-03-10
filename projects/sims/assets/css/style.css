@@ -1,5 +1,5 @@
 :root {
-  --bg: rgb(248, 248, 248);
+  --bg: #ffffff;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #5b6474;
@@ -16,9 +16,9 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
 body {
-  font-family: "Source Sans 3", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: var(--text);
-  background: linear-gradient(180deg, rgb(244, 244, 244) 0%, var(--bg) 24%, var(--bg) 100%);
+  background: #ffffff;
 }
 a { color: #1e5ed8; text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -31,16 +31,16 @@ a:hover { text-decoration: underline; }
 }
 .hero h1 {
   color: #14233f;
-  font-family: "Cormorant Garamond", "Times New Roman", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: clamp(1.7rem, 2.7vw, 2.5rem);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.12;
   margin: 0 auto 14px;
   max-width: 980px;
   text-wrap: balance;
   text-shadow: 0 1px 0 rgba(255,255,255,.75), 0 10px 22px rgba(22,44,86,.16);
 }
-.venue { color: var(--muted); font-size: 1rem; font-weight: 600; margin: 0 0 16px; }
+.venue { color: var(--muted); font-size: 1.28rem; font-weight: 800; margin: 0 0 20px; letter-spacing: 0.015em; }
 .authors {
   display: grid;
   gap: 8px;
@@ -69,8 +69,32 @@ a:hover { text-decoration: underline; }
 .btn:hover { text-decoration: none; transform: translateY(-1px); }
 .btn-arxiv { background: var(--arxiv); }
 .btn-arxiv:hover { background: var(--arxiv-hover); }
+.btn-arxiv i {
+  color: #b31b1b;
+  background: #f3f4f6;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
+  flex: 0 0 1.7rem;
+}
 .btn-github { background: var(--github); }
 .btn-github:hover { background: var(--github-hover); }
+.btn-github i {
+  color: #24292f;
+  background: #f3f4f6;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
+  flex: 0 0 1.7rem;
+}
 .btn-data { background: var(--data); }
 .btn-data:hover { background: var(--data-hover); }
 .section { padding: 42px 0; }
@@ -103,8 +127,39 @@ a:hover { text-decoration: underline; }
 }
 .skill-card video { aspect-ratio: 4 / 3; object-fit: cover; }
 pre {
-  background: #101c34; border-radius: 12px; color: #d8e5ff; margin: 0; overflow-x: auto; padding: 18px;
+  background: #f3f4f6; border-radius: 12px; color: #334155; margin: 0; overflow-x: auto; padding: 18px;
 }
 code { font-family: "SFMono-Regular", Menlo, Consolas, Monaco, monospace; font-size: .92rem; line-height: 1.65; }
 .footer { border-top: 1px solid var(--border); color: var(--muted); padding: 28px 0 42px; text-align: center; }
 @media (max-width: 560px) { .hero { padding: 52px 0 40px; } .btn { width: 100%; justify-content: center; } }
+
+.btn-paper i,
+.btn-pdf i,
+.btn-supp i,
+.btn-data i {
+  color: #334155;
+  background: #f3f4f6;
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.98rem;
+  flex: 0 0 1.7rem;
+}
+
+.btn-pdf { background: #b31b1b; color: #ffffff; }
+.btn-pdf:hover { background: #981616; color: #ffffff; }
+.btn-pdf i { color: #b31b1b; background: #f3f4f6; }
+
+.btn-paper i { color: #b31b1b; background: #f3f4f6; }
+
+.btn-paper { background: #b31b1b; color: #ffffff; }
+.btn-paper:hover { background: #981616; color: #ffffff; }
+.btn-paper i { color: #b31b1b; background: #f3f4f6; }
+
+.btn span {
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
