@@ -825,3 +825,28 @@
   margin-top: 1rem;
   border-radius: 12px;
 }
+
+
+.cv-section {
+  margin: 1.4rem 0 0;
+  padding: 1.1rem 1.25rem 1.2rem;
+  border: 1px solid rgba(128, 128, 128, 0.16);
+  border-radius: 14px;
+  background: rgba(248, 248, 248, 0.95);
+}
+
+.cv-section + .cv-section {
+  margin-top: 1rem;
+}
+
+.cv-section h2 {
+  margin-top: 0;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.18);
+  font-size: 1.3em;
+}
+
+.cv-section ul {
+  margin-bottom: 0;
+}
