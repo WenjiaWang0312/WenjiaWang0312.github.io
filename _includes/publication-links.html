@@ -1,0 +1,13 @@
+{% if include.item.arxivurl or include.item.pdfurl or include.item.paperurl or include.item.weburl or include.item.codeurl or include.item.hfurl or include.item.onedriveurl or include.item.bibtexurl or include.item.bibtex %}
+<div class="publication-links">
+  {% if include.item.arxivurl %}<a href="{{ include.item.arxivurl }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv ai-fw"></i> arXiv</a>{% endif %}
+  {% if include.item.pdfurl %}<a href="{{ include.item.pdfurl }}" target="_blank" rel="noopener noreferrer">{% if include.item.pdfurl contains "arxiv.org" %}<i class="ai ai-arxiv ai-fw"></i> arXiv{% else %}<i class="fas fa-file-pdf"></i> PDF{% endif %}</a>{% endif %}
+  {% if include.item.paperurl and include.item.paperurl != include.item.arxivurl and include.item.paperurl != include.item.pdfurl %}<a href="{{ include.item.paperurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Paper</a>{% endif %}
+  {% if include.item.weburl %}<a href="{{ include.item.weburl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Web</a>{% endif %}
+  {% if include.item.codeurl %}<a href="{{ include.item.codeurl }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> GitHub</a>{% endif %}
+  {% if include.item.hfurl %}<a href="{{ include.item.hfurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-database"></i> Hugging Face</a>{% endif %}
+  {% if include.item.onedriveurl %}<a href="{{ include.item.onedriveurl }}" target="_blank" rel="noopener noreferrer"><i class="fab fa-microsoft"></i> OneDrive</a>{% endif %}
+  {% if include.item.bibtexurl %}<a href="{{ include.item.bibtexurl }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-quote-right"></i> BibTeX</a>{% endif %}
+  {% if include.item.bibtex %}<details class="publication-bibtex-inline"><summary><i class="fas fa-quote-right"></i> BibTeX</summary><pre><code>{{ include.item.bibtex | escape }}</code></pre></details>{% endif %}
+</div>
+{% endif %}

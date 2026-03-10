@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+{% assign visible_publications = site.publications | where_exp: "item", "item.published != false" | sort: "date" | reverse %}
+{% assign publications_by_year = visible_publications | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+{% for year_group in publications_by_year %}
+  <details class="publication-year" open>
+    <summary>{{ year_group.name }} <span class="publication-year-count">({{ year_group.items | size }})</span></summary>
+    {% for post in year_group.items %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </details>
+{% endfor %}

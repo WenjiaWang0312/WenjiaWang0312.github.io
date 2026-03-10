@@ -1,0 +1,427 @@
+---
+---
+
+/*
+ * This file controls what is imported from /_sass
+ *
+ * Note that the files are processed in the order they are imported, so they are partly
+   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ */
+
+@import
+    "vendor/breakpoint/breakpoint",
+
+    "themes",
+    "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+    "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
+
+    "include/mixins",
+    "vendor/susy/susy",
+
+    "layout/reset",
+    "layout/base",
+
+    "include/utilities",
+    "layout/tables",
+    "layout/buttons",
+    "layout/notices",
+    "layout/masthead",
+    "layout/navigation",
+    "layout/footer",
+    "syntax",
+
+    "layout/forms",
+
+    "layout/page",
+    "layout/archive",
+    "layout/sidebar",
+    "layout/json_cv",
+
+    "vendor/font-awesome/fontawesome",
+    "vendor/font-awesome/solid",
+    "vendor/font-awesome/brands"
+;
+
+.publication-links {
+  font-size: 0.95em;
+  margin-top: 0.35em;
+}
+
+.publication-links a {
+  display: inline-block;
+  margin-right: 0.9em;
+  white-space: nowrap;
+}
+
+
+.publication-links {
+  font-size: 0.92em;
+  margin-top: 0.35em;
+}
+
+.publication-links a {
+  display: inline-block;
+  margin-right: 0.9em;
+  white-space: nowrap;
+}
+
+.archive__item-excerpt {
+  font-size: 0.92em;
+}
+
+.page__content .publication-bibtex,
+.archive__item .publication-bibtex {
+  margin-top: 0.45em;
+  font-size: 0.9em;
+}
+
+.publication-bibtex summary {
+  cursor: pointer;
+  user-select: none;
+}
+
+.publication-bibtex pre {
+  margin-top: 0.6em;
+  font-size: 0.88em;
+  overflow-x: auto;
+}
+
+.page__content {
+  font-size: 0.96em;
+}
+
+
+.publication-year {
+  margin-bottom: 1.2em;
+}
+
+.publication-year summary {
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 0.7em;
+}
+
+.publication-year-count {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.publication-bibtex summary i {
+  margin-right: 0.35em;
+  transition: transform 0.15s ease;
+}
+
+.publication-bibtex[open] summary i {
+  transform: rotate(90deg);
+}
+
+
+.archive__item--publication {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.archive__item-teaser--publication {
+  flex: 0 0 140px;
+  max-width: 140px;
+}
+
+.archive__item-teaser--publication img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.archive__item-body--publication {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.archive__item-title {
+  font-size: 1.08em;
+  line-height: 1.3;
+}
+
+.archive__item--publication .archive__item-title {
+  margin-top: 0;
+  font-size: 1.02em;
+}
+
+.archive__item--publication p,
+.archive__item--publication .archive__item-excerpt {
+  font-size: 0.9em;
+}
+
+.publication-links {
+  font-size: 0.88em;
+  margin-top: 0.3em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.85rem;
+}
+
+.publication-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+.publication-bibtex-inline {
+  display: inline-block;
+  margin: 0;
+}
+
+.publication-bibtex-inline summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.publication-bibtex-inline summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-bibtex-inline pre {
+  width: min(900px, 100vw - 8rem);
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  font-size: 0.88em;
+  overflow-x: auto;
+  background: rgba(128, 128, 128, 0.08);
+  border-radius: 6px;
+}
+
+@media (max-width: 767px) {
+  .archive__item--publication {
+    display: block;
+  }
+
+  .archive__item-teaser--publication {
+    max-width: 180px;
+    margin-bottom: 0.8rem;
+  }
+}
+
+
+.publication-links {
+  position: relative;
+}
+
+.publication-bibtex-inline {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.publication-bibtex-inline summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  white-space: nowrap;
+}
+
+.publication-bibtex-inline summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-bibtex-inline[open] {
+  z-index: 20;
+}
+
+.publication-bibtex-inline pre {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  min-width: 420px;
+  max-width: min(760px, 90vw);
+  margin: 0;
+  padding: 0.75rem;
+  font-size: 0.88em;
+  line-height: 1.45;
+  overflow-x: auto;
+  background: var(--global-bg-color);
+  border: 1px solid var(--global-border-color);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 767px) {
+  .publication-bibtex-inline pre {
+    min-width: 0;
+    width: min(88vw, 540px);
+  }
+}
+
+
+.archive__item--publication {
+  padding: 1rem 1.1rem;
+  margin-bottom: 1rem;
+  background: rgba(128, 128, 128, 0.045);
+  border: 1px solid var(--global-border-color);
+  border-radius: 10px;
+}
+
+.archive__item--publication:hover {
+  background: rgba(128, 128, 128, 0.065);
+}
+
+
+.publication-links {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.85rem;
+  margin: 0.35rem 0 0 0;
+}
+
+.publication-links > * {
+  flex: 0 0 auto;
+}
+
+
+.publication-authors {
+  margin: 0.2rem 0 0.25rem 0;
+  font-size: 0.9em;
+}
+
+.publication-authors strong {
+  font-weight: 700;
+  color: var(--global-text-color);
+}
+
+.publication-award {
+  margin-top: -0.1rem;
+  font-size: 0.88em;
+  font-weight: 600;
+}
+
+
+.publication-bibtex-inline,
+.publication-bibtex-inline summary {
+  font-size: 1em;
+  line-height: 1.2;
+}
+
+.publication-bibtex-inline summary {
+  padding: 0;
+  margin: 0;
+}
+
+.publication-bibtex-inline i,
+.publication-links a i {
+  font-size: 1em;
+}
+
+
+.publication-meta-line {
+  margin: 0.08rem 0 0.18rem 0;
+  font-size: 0.9em;
+}
+
+.publication-note-inline {
+  margin-left: 0.45rem;
+  font-size: 0.95em;
+  opacity: 0.9;
+}
+
+.publication-award {
+  display: none;
+}
+
+
+.publication-links a,
+.publication-bibtex-inline summary {
+  color: #1a73e8;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.publication-links a:hover,
+.publication-bibtex-inline summary:hover {
+  color: #1558b0;
+  text-decoration: underline;
+}
+
+.publication-bibtex-inline summary {
+  border: none;
+  background: transparent;
+}
+
+
+.publication-links a,
+.publication-bibtex-inline summary {
+  color: var(--global-text-color);
+}
+
+.publication-links a:hover,
+.publication-bibtex-inline summary:hover {
+  color: var(--global-text-color);
+}
+
+.projects-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 240px) minmax(0, 1fr);
+  gap: 1rem 1.25rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(128, 128, 128, 0.18);
+  border-radius: 12px;
+  background: rgba(128, 128, 128, 0.04);
+}
+
+.project-card__media-link {
+  display: block;
+}
+
+.project-card__media {
+  display: block;
+  width: 100%;
+  max-width: 240px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-card__content > :first-child {
+  margin-top: 0;
+}
+
+.project-card__title {
+  margin-bottom: 0.4rem;
+}
+
+.project-card__description {
+  margin-bottom: 0.6rem;
+}
+
+.project-card__highlights {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card__media {
+    max-width: 100%;
+  }
+}
