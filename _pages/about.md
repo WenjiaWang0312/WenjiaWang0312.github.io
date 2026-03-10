@@ -27,9 +27,9 @@ redirect_from:
 <section class="home-section home-section--papers">
   <h2>Selected Papers</h2>
   <ul>
-    <li><a href="/projects/embodmocap/">EmbodMocap</a>: In-the-wild 4D human-scene reconstruction for embodied agents. <strong>CVPR 2026</strong></li>
-    <li><a href="/projects/sims/">SIMS</a>: Simulating stylized human-scene interactions with retrieval-augmented script generation. <strong>ICCV 2025</strong></li>
-    <li><a href="/projects/zolly/">Zolly</a>: Perspective-aware 3D human mesh reconstruction. <strong>ICCV 2023 Oral 🏆️</strong></li>
+    <li><a href="/projects/embodmocap/">EmbodMocap</a> — In-the-wild 4D human-scene reconstruction. <strong>CVPR 2026</strong></li>
+    <li><a href="/projects/sims/">SIMS</a> — Stylized human-scene interaction simulation. <strong>ICCV 2025</strong></li>
+    <li><a href="/projects/zolly/">Zolly</a> — Perspective-aware human mesh reconstruction. <strong>ICCV 2023 Oral 🏆️</strong></li>
   </ul>
 </section>
 
