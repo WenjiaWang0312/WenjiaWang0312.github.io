@@ -826,6 +826,34 @@
   border-radius: 12px;
 }
 
+html[data-theme="dark"] .home-section,
+html[data-theme="dark"] .cv-section {
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme="dark"] .home-section h2,
+html[data-theme="dark"] .cv-section h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.14);
+}
+
+html[data-theme="dark"] .home-section {
+  background: rgba(20, 24, 31, 0.82);
+}
+
+html[data-theme="dark"] .home-section--news {
+  background: rgba(14, 161, 197, 0.18);
+}
+
+html[data-theme="dark"] .home-section--papers {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .home-section--services,
+html[data-theme="dark"] .home-section--scope,
+html[data-theme="dark"] .cv-section {
+  background: rgba(255, 255, 255, 0.06);
+}
+
 
 .cv-section {
   margin: 1.4rem 0 0;
