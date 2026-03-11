@@ -15,7 +15,7 @@ redirect_from:
 <section class="home-section home-section--news">
   <h2>Recent News</h2>
   <ul>
-    <li><strong>Mar 10, 2026</strong>: We have open-sourced <a href="/projects/embodmocap/">EmbodMocap</a>.</li>
+    <li><strong>Mar 10, 2026</strong>: We have open-sourced <a href="https://github.com/WenjiaWang0312/EmbodMocap">EmbodMocap</a>.</li>
     <li><strong>Feb 27, 2026</strong>: We built the webpage for <a href="/projects/ahap/">AHAP</a>. The preprint is available on <a href="https://arxiv.org/abs/2602.23951">arXiv</a>.</li>
     <li><strong>Feb 22, 2026</strong>: <a href="/projects/embodmocap/">EmbodMocap</a> has been accepted to CVPR 2026.</li>
     <li><strong>Jan 6, 2026</strong>: We built the webpage for <a href="/projects/embodmocap/">EmbodMocap</a>.</li>
