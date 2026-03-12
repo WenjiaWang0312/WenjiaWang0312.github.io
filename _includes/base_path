@@ -1,5 +1,9 @@
-{% if site.url %}
+{% comment %}
+  For local development we want navigation links to stay on localhost.
+  In production (GitHub Pages), use the canonical absolute URL.
+{% endcomment %}
+{% if jekyll.environment == "production" and site.url %}
   {% assign base_path = site.url | append: site.baseurl %}
 {% else %}
-  {% assign base_path = site.github.url %}
+  {% assign base_path = site.baseurl %}
 {% endif %}

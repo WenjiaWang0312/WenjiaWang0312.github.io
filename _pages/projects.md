@@ -25,5 +25,3 @@ author_profile: true
     </div>
   </article>
 </div>
-
-## Preprints

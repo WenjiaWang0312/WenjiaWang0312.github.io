@@ -1,152 +1,120 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Wenjia Wang",
+    "email": "wwj2022@connect.hku.hk",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://wenjiawang0312.github.io",
+    "summary": "Ph.D. student at HKU. Research interests include Real2Sim, Sim2Real, and embodied AI for computer graphics.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Hong Kong",
+      "countryCode": "HK",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://scholar.google.com/citations?authuser=1&user=-KXrF4cAAAAJ"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "",
+        "url": "https://github.com/WenjiaWang0312"
+      },
+      {
+        "network": "X",
+        "username": "",
+        "url": "https://x.com/WenjiaWang_HKU"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "name": "Shanghai AI Laboratory",
+      "position": "Research Intern",
+      "startDate": "2022-09",
+      "endDate": "2024-08",
+      "location": "Shanghai, China",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Tencent Technology",
+      "position": "Senior Algorithm Researcher",
+      "startDate": "2022-03",
+      "endDate": "2022-08",
+      "location": "Shanghai, China",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "SenseTime",
+      "position": "Algorithm Researcher",
+      "startDate": "2021-03",
+      "endDate": "2022-03",
+      "location": "Shenzhen, China",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "SenseTime",
+      "position": "Research Intern",
+      "startDate": "2019-09",
+      "endDate": "2021-02",
+      "location": "Beijing / Shenzhen, China",
+      "summary": "",
+      "highlights": []
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "The University of Hong Kong",
+      "area": "Ph.D. in Computer Science",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "startDate": "2023-01",
+      "endDate": "Present",
+      "location": "Hong Kong SAR, China",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "Tongji University",
+      "area": "M.E. in Mechanical Engineering",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "startDate": "2016-09",
+      "endDate": "2019-06",
+      "location": "Shanghai, China",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "Nanjing University of Aeronautics and Astronautics",
+      "area": "B.E. in Aircraft Design",
       "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "startDate": "2012-09",
+      "endDate": "2016-06",
+      "location": "Nanjing, China",
       "gpa": null,
       "courses": []
     }
   ],
   "skills": [],
-  "languages": [],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional"
+    }
+  ],
   "interests": [],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

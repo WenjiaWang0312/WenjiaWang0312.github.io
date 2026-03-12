@@ -36,7 +36,7 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
+        {% elsif page.venue and page.date and page.collection != 'publications' %}
           {% if page.authors %}
             <p class="publication-authors">{{ page.authors }}</p>
           {% endif %}
@@ -52,10 +52,16 @@ layout: default
         </header>
       {% endunless %}
 
+      {% if page.collection == 'publications' %}
+        {% include publication-detail.html page=page %}
+      {% endif %}
+
       <section class="page__content" itemprop="text">
         {{ content }}
 
-        {% include publication-links.html item=page %}
+        {% unless page.collection == 'publications' %}
+          {% include publication-links.html item=page %}
+        {% endunless %}
 
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}

@@ -1,72 +1,10 @@
 {% assign cv = site.data.cv %}
 
-<style>
-  .archive {
-    width: 80%;
-    margin: 0 auto;
-    float: none;
-    padding-right: 0;
-  }
-  
-  @media (min-width: 80em) {
-    .archive {
-      width: 70%;
-    }
-  }
-</style>
-
 <div class="cv-container">
-  <!-- Basic Information -->
-  <div class="cv-section cv-header">
-    <h1>{{ cv.basics.name }}</h1>
-    {% if cv.basics.label %}
-    <h2>{{ cv.basics.label }}</h2>
-    {% endif %}
-    
-    <div class="cv-contact">
-      {% if cv.basics.email %}
-      <div class="cv-contact-item">
-        <i class="fas fa-envelope"></i> {{ cv.basics.email }}
-      </div>
-      {% endif %}
-      
-      {% if cv.basics.phone %}
-      <div class="cv-contact-item">
-        <i class="fas fa-phone"></i> {{ cv.basics.phone }}
-      </div>
-      {% endif %}
-      
-      {% if cv.basics.website %}
-      <div class="cv-contact-item">
-        <i class="fas fa-globe"></i> <a href="{{ cv.basics.website }}" target="_blank">{{ cv.basics.website }}</a>
-      </div>
-      {% endif %}
-      
-      {% if cv.basics.location.city %}
-      <div class="cv-contact-item">
-        <i class="fas fa-map-marker-alt"></i> {{ cv.basics.location.city }}{% if cv.basics.location.region %}, {{ cv.basics.location.region }}{% endif %}{% if cv.basics.location.countryCode %}, {{ cv.basics.location.countryCode }}{% endif %}
-      </div>
-      {% endif %}
-    </div>
-    
-    {% if cv.basics.profiles.size > 0 %}
-    <div class="cv-profiles">
-      {% for profile in cv.basics.profiles %}
-      <a href="{{ profile.url }}" target="_blank" class="cv-profile-link">
-        <i class="fab fa-{{ profile.network | downcase }}"></i> {{ profile.network }}
-      </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-  </div>
-  
-  {% if cv.basics.summary %}
-  <!-- Summary -->
-  <div class="cv-section">
-    <h2>Summary</h2>
-    <p>{{ cv.basics.summary }}</p>
-  </div>
-  {% endif %}
+  {% comment %}
+    Header/contact is shown in the left author sidebar (author_profile: true).
+    Keep this template focused on structured CV sections (education/work/etc.).
+  {% endcomment %}
   
   {% if cv.education.size > 0 %}
   <!-- Education -->
@@ -77,10 +15,12 @@
       <li class="cv-item">
         <div class="cv-item-header">
           <div class="cv-item-title">{{ education.area }}</div>
-          <div class="cv-item-date">{{ education.endDate }}</div>
+          <div class="cv-item-date">
+            {% if education.startDate %}{{ education.startDate }}{% endif %}{% if education.endDate %}{% if education.startDate %} - {% endif %}{{ education.endDate }}{% endif %}
+          </div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ education.institution }}</div>
+          <div class="cv-item-subtitle">{{ education.institution }}{% if education.location %}, {{ education.location }}{% endif %}</div>
           {% if education.gpa %}
           <div class="cv-item-detail">GPA: {{ education.gpa }}</div>
           {% endif %}
@@ -108,7 +48,7 @@
           <div class="cv-item-date">{{ work.startDate }}{% if work.endDate %} - {{ work.endDate }}{% endif %}</div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ work.company }}</div>
+          <div class="cv-item-subtitle">{{ work.name }}{% if work.location %}, {{ work.location }}{% endif %}</div>
           {% if work.summary %}
           <div class="cv-item-detail">{{ work.summary }}</div>
           {% endif %}

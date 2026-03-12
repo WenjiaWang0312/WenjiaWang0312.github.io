@@ -1,0 +1,74 @@
+{% comment %}
+  Publication detail block for pages in the `publications` collection.
+  This is meant to add information density beyond a plain permalink page,
+  while keeping the content ({{ content }}) available below.
+
+  Usage:
+    {% include publication-detail.html page=page %}
+{% endcomment %}
+
+{% assign pub = include.page | default: page %}
+
+{% if pub.header.teaser %}
+  {% assign teaser = pub.header.teaser %}
+{% else %}
+  {% assign teaser = nil %}
+{% endif %}
+
+<section class="publication-detail" aria-label="Publication details">
+  {% if teaser %}
+    <div class="publication-detail__teaser">
+      {% if teaser contains '://' %}
+        <img src="{{ teaser }}" alt="" loading="lazy" />
+      {% else %}
+        <img src="{{ teaser | relative_url }}" alt="" loading="lazy" />
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="publication-detail__body">
+    {% if pub.authors %}
+      <p class="publication-authors">{{ pub.authors }}</p>
+    {% endif %}
+
+    {% if pub.venue and pub.date %}
+      {% assign venue_downcase = pub.venue | downcase %}
+      {% if venue_downcase contains 'arxiv' %}
+        <p class="publication-meta-line">
+          <strong><i>{{ pub.venue }}</i>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}</strong>
+          {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
+        </p>
+      {% else %}
+        <p class="publication-meta-line">
+          <strong><i>{{ pub.venue_display | default: pub.venue }}</i>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}</strong>
+          {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
+        </p>
+      {% endif %}
+    {% endif %}
+
+    {% if pub.abstract %}
+      <p class="publication-detail__abstract">{{ pub.abstract }}</p>
+    {% elsif pub.excerpt %}
+      <p class="publication-detail__abstract">{{ pub.excerpt | strip_html }}</p>
+    {% endif %}
+
+    {% include publication-links.html item=pub show_bibtex=false %}
+
+    {% if pub.citation %}
+      <div class="publication-detail__citation">
+        <h2 class="publication-detail__heading">Citation</h2>
+        <p class="publication-detail__citation-body">{{ pub.citation }}</p>
+      </div>
+    {% endif %}
+
+    {% if pub.bibtex %}
+      <div class="publication-detail__bibtex">
+        <details class="publication-bibtex-inline">
+          <summary><i class="fas fa-quote-right"></i> BibTeX</summary>
+          <pre><code>{{ pub.bibtex | escape }}</code></pre>
+        </details>
+      </div>
+    {% endif %}
+  </div>
+</section>
+
