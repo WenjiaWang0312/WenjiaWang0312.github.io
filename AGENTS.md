@@ -7,7 +7,11 @@ This repository is a personal academic homepage. Optimize for accurate research 
 Prefer content edits over theme refactors. For routine updates, edit `_pages/`, `_publications/`, `_talks/`, `_teaching/`, `projects/`, `files/`, and `assets/publications/`. Only change `_layouts/`, `_includes/`, `_sass/`, or `assets/js/` when the request truly requires shared layout, styling, or behavior changes.
 
 ## Key Paths
-Core pages live in `_pages/`. Research collections live in `_publications/`, `_talks/`, `_teaching/`, `_portfolio/`, and `_posts/`. Standalone project microsites live in `projects/<slug>/`. Source JavaScript lives in `assets/js/_main.js`; `assets/js/main.min.js` is generated. CV source is `_pages/cv.md`, with optional JSON output in `_data/cv.json`.
+Core pages live in `_pages/`. Research collections live in `_publications/`, `_talks/`, `_teaching/`, `_portfolio/`, and `_posts/`. Standalone project microsites live in `projects/<slug>/`. Source JavaScript lives in `assets/js/_main.js`; `assets/js/main.min.js` is generated.
+
+CV is JSON-driven:
+- Route: `/cv/` comes from `_pages/cv.md` (wrapper) and renders `_includes/cv-template.html` using `_data/cv.json`.
+- Styles: JSON CV styles live in `_sass/layout/_json_cv.scss`.
 
 ## Homepage Rules
 `_pages/about.md` is the homepage. Keep it concise and high-signal. News should stay milestone-driven, not diary-like. Featured papers should highlight representative work rather than exhaustively listing everything. When adding a strong new paper or project, check whether the homepage should also be updated.
@@ -16,6 +20,7 @@ Core pages live in `_pages/`. Research collections live in `_publications/`, `_t
 These are local conventions used by the current homepage implementation. Prefer following them over redesigning.
 
 - Section order (top to bottom): `Recent News` -> `Selected Papers` -> `Research Scope` -> `Openings / Collaboration` -> `Academic Services`.
+- Section styling: do not use colored "card" blocks for sections. Use divider lines between large sections (thicker) and keep the background clean.
 - Recent News tags: display a short bracket tag (e.g., `[Open Source]`, `[Accept]`, `[Project Page]`, `[Preprint]`) using the shared `home-news-tag` pill style.
 - Tag variants: for consistent light color-coding, always add one variant class:
   - `home-news-tag--accept`, `home-news-tag--preprint`, `home-news-tag--open-source`, `home-news-tag--project`, `home-news-tag--award`, `home-news-tag--other`.
@@ -25,6 +30,7 @@ These are local conventions used by the current homepage implementation. Prefer 
   - Venue/year displayed to the right of the title.
   - One-sentence contribution/summary.
   - Do not include extra `Project / arXiv / GitHub` link rows inside Selected Papers unless explicitly requested.
+- Selected Papers separators: use subtle thin dividers between items, but keep enough vertical spacing so dividers do not visually collide with teaser images.
 - Research Scope text: the detailed Real2Sim/Sim2Real explanatory paragraphs may be commented out when the homepage is kept ultra concise.
 - Collaboration tone: prefer humble phrasing such as "Our group is open to research collaborations and student projects ..." rather than overly direct self-promotion.
 
@@ -33,11 +39,16 @@ These are local conventions used by the current homepage implementation. Prefer 
 
 - Sort: list items in reverse chronological order (newest first).
 - Tags: each bullet should include a bracket tag (using `home-news-tag` plus a `home-news-tag--*` variant) and keep dates explicit (e.g., `Mar 10, 2026`).
+- Visual: keep tag colors light/subtle; all news items should still read as one unified list rather than separate colored categories.
+
+## Publications Conventions
+- List layout: remove "card" backgrounds. Use thin dividers between papers and thicker dividers between years.
+- Detail pages: publication detail pages should show meaningful fields (teaser, authors, venue/year, links, abstract/citation). If a detail page is empty, improve the template/fields rather than keeping a blank landing page.
 
 ## Content Sync Rules
 - New publication: add `_publications/YYYY-MM-DD-slug.md`, add a teaser image in `assets/publications/`, and verify `paperurl`, `pdfurl`, `weburl`, and `header.teaser`.
 - New project: add `projects/<slug>/index.html` with local assets, then link it from the matching publication or homepage when relevant.
-- CV updates: the primary CV page (`/cv/`) is rendered from `_data/cv.json` via `_includes/cv-template.html`. Update structured CV content in `_data/cv.json`.
+- CV updates: update structured CV content in `_data/cv.json`. Keep `/cv/` aligned with the standard archive content column (left-aligned, not a centered narrow column), so it visually matches `/publications/`.
 - Generated assets: rebuild `assets/js/main.min.js` with `npm run build:js` after changing `assets/js/**`.
 
 ## Project Media Conventions (Video Covers)
@@ -46,6 +57,9 @@ Project microsites often use HTML5 `<video poster="...">` previews. To keep nami
 - Cover naming: for a video file `some_video.mp4`, the cover image should be `some_video_cover.jpg`.
 - Location: the cover image should live in the same folder as the video file (relative to the microsite `index.html`).
 - Prefer generating covers via `ffmpeg` (scriptable and reproducible) rather than relying on browser "first frame" behavior.
+
+## Local Development Conventions
+- Internal links: do not build internal links by hard-coding `site.url` for local preview. Localhost navigation should stay on localhost; only use absolute URLs in production builds.
 
 ## Writing Style
 Use short, factual academic prose. Prefer concise summaries over promotional language. Homepage sections should scan quickly. Publication blurbs should emphasize the contribution and venue. Keep filenames and permalinks lowercase and use 2-space indentation in YAML, HTML, SCSS, and site JavaScript.
