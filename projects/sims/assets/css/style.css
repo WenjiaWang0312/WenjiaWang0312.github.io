@@ -60,6 +60,13 @@ a:hover { text-decoration: underline; }
   color: var(--muted); display: flex; flex-wrap: wrap; gap: 10px 24px;
   justify-content: center; margin: 0 auto; font-size: 0.98rem;
 }
+.author-note {
+  color: var(--muted);
+  font-size: 0.98rem;
+  margin: 10px auto 0;
+  text-align: center;
+}
+.author-note-marker { font-weight: 800; margin-right: 4px; }
 .button-row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
 .btn {
   border-radius: 999px; color: #fff; display: inline-flex; align-items: center; gap: 8px;
