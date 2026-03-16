@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div class="home-intro">
-  <p>I am a fourth-year Ph.D. student in the Department of Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
+  <p>I am a fourth-year (final-year) Ph.D. student in the Department of Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents, with an emphasis on humanoid simulation and multimodal human motion understanding and generation.</p>
 </div>
 
