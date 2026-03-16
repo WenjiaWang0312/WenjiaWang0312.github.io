@@ -92,6 +92,6 @@ redirect_from:
   <h2>Academic Services</h2>
   <ul>
     <li><strong>Teaching Assistant</strong>: COMP7404C (Spring 2024, HKU); COMP3329 (Spring 2024, HKU)</li>
-    <li><strong>Reviewer</strong>: CVPR, ICCV, ICLR, SIGGRAPH Asia, 3DV, ACCV (2023–2026); <strong>Journal</strong>: IEEE TIP (2022)</li>
+    <li><strong>Conference Reviewer</strong>: ICCV (2023); ICLR (2024–2026); ACCV (2024); SIGGRAPH Asia (2024–2025); CVPR (2025–2026); 3DV (2025–2026); ECCV (2026); SIGGRAPH (2026). <strong>Journal Reviewer</strong>: IEEE TIP (2022).</li>
   </ul>
 </section>

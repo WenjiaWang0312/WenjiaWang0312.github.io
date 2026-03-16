@@ -22,9 +22,8 @@ bibtex: |
   }
 header:
   teaser: '/projects/embodmocap/teaser.jpg'
-authors: '<strong>Wenjia Wang</strong>*, Liang Pan*, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura.'
-award: '(* Core Contributor.)'
+authors: '<strong>Wenjia Wang</strong>*, Liang Pan*, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, Taku Komura†.'
+award: '(* Core Contributor, † Corresponding Author)'
 ---
 
 Project page: [EmbodMocap](/projects/embodmocap/)
-
