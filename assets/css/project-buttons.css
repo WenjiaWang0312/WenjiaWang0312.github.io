@@ -4,7 +4,7 @@
 .button-row .btn {
   align-items: center;
   background: rgba(255, 255, 255, 0.92) !important;
-  border: 1px solid #c8d2df !important;
+  border: 1.5px solid #c8d2df !important;
   border-radius: 11px;
   box-shadow: 0 8px 18px rgba(17, 35, 68, 0.06);
   color: #5c6779 !important;
