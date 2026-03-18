@@ -1,5 +1,6 @@
 :root {
   --bg: #f5f7fb;
+  --tint: #eef3fb;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #5b6474;
@@ -45,8 +46,15 @@ a:hover {
 
 .hero {
   border-bottom: 1px solid var(--border);
-  padding: 64px 0 52px;
+  padding: 54px 0 40px;
   text-align: center;
+}
+.hero .container {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 38px 26px;
 }
 
 .venue {
@@ -199,6 +207,11 @@ a:hover {
 .section {
   padding: 44px 0;
 }
+.section--tint {
+  background: var(--tint);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
 
 .section h2 {
   font-size: clamp(1.45rem, 2.1vw, 1.8rem);
@@ -212,6 +225,7 @@ a:hover {
   margin: 0 auto;
 }
 
+.abstract-card,
 .media-card,
 .demo-card,
 .result-card {
@@ -221,6 +235,10 @@ a:hover {
   box-shadow: var(--shadow);
   margin: 0;
   overflow: hidden;
+}
+
+.abstract-card {
+  padding: 18px 20px;
 }
 
 .media-card {
@@ -316,7 +334,11 @@ code {
 
 @media (max-width: 560px) {
   .hero {
-    padding: 52px 0 40px;
+    padding: 42px 0 32px;
+  }
+
+  .hero .container {
+    padding: 28px 18px;
   }
 
   .authors {

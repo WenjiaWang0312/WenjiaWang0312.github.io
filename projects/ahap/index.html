@@ -9,6 +9,7 @@
       content="Project page template adapted from EgoGrasp / Nerfies style."
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/project-buttons.css" />
     <link rel="stylesheet" href="/assets/css/academicons.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
@@ -37,9 +38,18 @@
 
         <div class="button-row">
           <!-- TODO: Replace with your real links -->
-          <a class="btn btn-paper" href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i><span>Paper</span></a>
-          <a class="btn btn-arxiv" href="https://arxiv.org/abs/2602.23951" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv"></i><span>arXiv</span></a>
-          <a class="btn btn-github" href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i><span>Code</span></a>
+          <a class="btn btn-paper" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h6"/><path d="M9 9h1"/></svg></span>
+            <span>Paper</span>
+          </a>
+          <a class="btn btn-arxiv" href="https://arxiv.org/abs/2602.23951" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 5h5v5"/><path d="M10 14 19 5"/><path d="M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4"/></svg></span>
+            <span>arXiv</span>
+          </a>
+          <a class="btn btn-github" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m14 4-4 16"/></svg></span>
+            <span>Code</span>
+          </a>
         </div>
       </div>
     </header>
@@ -57,7 +67,9 @@
       <section class="section">
         <div class="container narrow">
           <h2>Abstract</h2>
-          <p class="latex-source abstract-body">Reconstructing 3D humans from images captured at multiple perspectives typically requires pre-calibration, like using checkerboards or MVS algorithms, which limits scalability and applicability in diverse real-world scenarios. In this work, we present \textbf{\ours{}} (Reconstructing \textbf{A}rbitrary \textbf{H}umans from \textbf{A}rbitrary \textbf{P}erspectives), a feed-forward framework for reconstructing arbitrary humans from arbitrary camera perspectives without requiring camera calibration. Our core lies in the effective fusion of multi-view geometry to assist human association, reconstruction and localization. Specifically, we use a Cross-View Identity Association module through learnable person queries and soft assignment, supervised by contrastive learning to resolve cross-view human identity association. A Human Head fuses cross-view features and scene context for SMPL prediction, guided by cross-view reprojection losses to enforce body pose consistency. Additionally, multi-view geometry eliminates the depth ambiguity inherent in monocular methods, providing more precise 3D human localization through multi-view triangulation. Experiments on EgoHumans and EgoExo4D demonstrate that \ours{} achieves competitive performance on both world-space human reconstruction and camera pose estimation, while being 180$\times$ faster than optimization-based approaches. \end{abstract}</p>
+          <div class="abstract-card">
+            <p class="latex-source abstract-body">Reconstructing 3D humans from images captured at multiple perspectives typically requires pre-calibration, like using checkerboards or MVS algorithms, which limits scalability and applicability in diverse real-world scenarios. In this work, we present \textbf{\ours{}} (Reconstructing \textbf{A}rbitrary \textbf{H}umans from \textbf{A}rbitrary \textbf{P}erspectives), a feed-forward framework for reconstructing arbitrary humans from arbitrary camera perspectives without requiring camera calibration. Our core lies in the effective fusion of multi-view geometry to assist human association, reconstruction and localization. Specifically, we use a Cross-View Identity Association module through learnable person queries and soft assignment, supervised by contrastive learning to resolve cross-view human identity association. A Human Head fuses cross-view features and scene context for SMPL prediction, guided by cross-view reprojection losses to enforce body pose consistency. Additionally, multi-view geometry eliminates the depth ambiguity inherent in monocular methods, providing more precise 3D human localization through multi-view triangulation. Experiments on EgoHumans and EgoExo4D demonstrate that \ours{} achieves competitive performance on both world-space human reconstruction and camera pose estimation, while being 180$\times$ faster than optimization-based approaches. \end{abstract}</p>
+          </div>
         </div>
       </section>
 
@@ -73,7 +85,7 @@ Our cross-view identity association module matches the same person across views 
         </div>
       </section>
 
-      <section class="section">
+      <section class="section section--tint">
         <div class="container">
           <h2>Video Demonstrations</h2>
           <div class="demo-grid">

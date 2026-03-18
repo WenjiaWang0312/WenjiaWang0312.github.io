@@ -1,5 +1,6 @@
 :root {
-  --bg: #ffffff;
+  --bg: #f5f7fb;
+  --tint: #eef3fb;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #5b6474;
@@ -22,7 +23,7 @@ html, body { margin: 0; padding: 0; }
 body {
   font-family: "Times New Roman", Times, serif;
   color: var(--text);
-  background: #ffffff;
+  background: linear-gradient(180deg, #eff3fb 0%, var(--bg) 24%, var(--bg) 100%);
 }
 
 a { color: #1e5ed8; text-decoration: none; }
@@ -31,8 +32,15 @@ a:hover { text-decoration: underline; }
 .container.narrow { width: min(900px, 92vw); margin: 0 auto; }
 .hero {
   border-bottom: 1px solid var(--border);
-  padding: 64px 0 48px;
+  padding: 54px 0 40px;
   text-align: center;
+}
+.hero .container {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  padding: 38px 26px;
 }
 .hero h1 {
   color: #14233f;
@@ -100,6 +108,11 @@ a:hover { text-decoration: underline; }
 .btn-paper, .btn-pdf, .btn-supp { background: var(--paper); }
 .btn-paper:hover, .btn-pdf:hover, .btn-supp:hover { background: var(--paper-hover); }
 .section { padding: 42px 0; }
+.section--tint {
+  background: var(--tint);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
 .section h2 { font-size: clamp(1.45rem, 2.1vw, 1.8rem); margin: 0 0 18px; text-align: center; }
 .abstract-card,
 .media-card,
@@ -148,7 +161,8 @@ code { font-family: "SFMono-Regular", Menlo, Consolas, Monaco, monospace; font-s
 .footer { border-top: 1px solid var(--border); color: var(--muted); padding: 28px 0 42px; text-align: center; }
 .footer p { margin: 8px auto; }
 @media (max-width: 560px) {
-  .hero { padding: 52px 0 40px; }
+  .hero { padding: 42px 0 32px; }
+  .hero .container { padding: 28px 18px; }
   .btn { width: 100%; justify-content: center; }
 }
 

@@ -10,6 +10,7 @@ redirect_from:
 <div class="home-intro">
   <p>I am a fourth-year (final-year) Ph.D. student in the Department of Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents, with an emphasis on humanoid simulation and multimodal human motion understanding and generation.</p>
+  <p>I am on the 2026 job market and am actively seeking research positions in industry or academia.</p>
 </div>
 
 <section class="home-section home-section--news">
@@ -85,7 +86,7 @@ redirect_from:
 
 <section class="home-section home-section--collab">
   <h2>Openings / Collaboration</h2>
-  <p>Our group is open to research collaborations and student projects related to the topics above. If you are interested, please email me at <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a> with a brief description of your interests and timeline.</p>
+  <p>I am on the 2026 job market and am actively seeking research positions in industry or academia. Our group is also open to research collaborations and student projects related to the topics above. If you are interested in collaboration, please email me at <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a>.</p>
 </section>
 
 <section class="home-section home-section--services">
