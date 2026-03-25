@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="home-intro">
   <p>I am a fourth-year (final-year) Ph.D. student in the Department of Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
-  <p>During my Ph.D., I have also worked closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, and I have been fortunate to collaborate with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
+  <p>During my Ph.D., I worked closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>. I also collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents, with an emphasis on humanoid simulation and multimodal human motion understanding and generation.</p>
   <p>I am on the 2026 job market and am actively seeking research positions in industry or academia.</p>
 </div>
