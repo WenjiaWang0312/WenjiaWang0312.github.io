@@ -61,7 +61,7 @@
       {% if venue_downcase contains 'arxiv' %}
         <p class="publication-meta-line"><strong><i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</strong>{% if post.award %} <span class="publication-note-inline">{{ post.award }}</span>{% endif %}</p>
       {% else %}
-        <p class="publication-meta-line"><strong><i>{{ post.venue_display | default: post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}</strong>{% if post.award %} <span class="publication-note-inline">{{ post.award }}</span>{% endif %}</p>
+        <p class="publication-meta-line"><strong><i>{{ post.venue_display | default: post.venue }}</i> {{ post.date | default: "1900-01-01" | date: "%Y" }}{% if post.venue_note %}, <span class="publication-note-inline">{{ post.venue_note }}</span>{% endif %}</strong>{% if post.award %} <span class="publication-note-inline">{{ post.award }}</span>{% endif %}</p>
       {% endif %}
     {% elsif post.date %}
       <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>

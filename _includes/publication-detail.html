@@ -40,7 +40,7 @@
         </p>
       {% else %}
         <p class="publication-meta-line">
-          <strong><i>{{ pub.venue_display | default: pub.venue }}</i>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}</strong>
+          <strong><i>{{ pub.venue_display | default: pub.venue }}</i> {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.venue_note %}, <span class="publication-note-inline">{{ pub.venue_note }}</span>{% endif %}</strong>
           {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
         </p>
       {% endif %}
@@ -71,4 +71,3 @@
     {% endif %}
   </div>
 </section>
-

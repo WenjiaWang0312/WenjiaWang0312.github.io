@@ -67,7 +67,7 @@ redirect_from:
       <div class="archive__item-body archive__item-body--publication">
         <h3 class="archive__item-title home-featured-title" itemprop="headline">
           <a href="/projects/zolly/">Zolly</a>
-          <span class="home-featured-venue"><i>ICCV</i> 2023 <span class="publication-note-inline">Oral 🏆️</span></span>
+          <span class="home-featured-venue"><i>ICCV</i> 2023, <span class="publication-note-inline">Oral 🏆️</span></span>
         </h3>
         <p class="archive__item-excerpt" itemprop="description">Zoom focal length correctly for perspective-distorted human mesh reconstruction.</p>
       </div>
