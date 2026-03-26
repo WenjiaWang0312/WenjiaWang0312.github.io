@@ -19,5 +19,5 @@ bibtex: |
     year={2025}
   }
 header:
-  teaser: '/assets/publications/humanwild.gif'
+  teaser: '/assets/publications/humanwild.png'
 ---
