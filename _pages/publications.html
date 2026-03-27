@@ -15,9 +15,13 @@ author_profile: true
 {% assign publications_by_year = visible_publications | group_by_exp: "post", "post.date | date: '%Y'" %}
 
 {% for year_group in publications_by_year %}
+  {% assign year_items_by_date = year_group.items | sort: "date" | reverse %}
+  {% assign year_items_with_priority = year_items_by_date | where_exp: "post", "post.sort_priority" | sort: "sort_priority" | reverse %}
+  {% assign year_items_without_priority = year_items_by_date | where_exp: "post", "post.sort_priority == nil" %}
+  {% assign ordered_year_items = year_items_with_priority | concat: year_items_without_priority %}
   <details class="publication-year" open>
     <summary>{{ year_group.name }} <span class="publication-year-count">({{ year_group.items | size }})</span></summary>
-    {% for post in year_group.items %}
+    {% for post in ordered_year_items %}
       {% include archive-single.html %}
     {% endfor %}
   </details>

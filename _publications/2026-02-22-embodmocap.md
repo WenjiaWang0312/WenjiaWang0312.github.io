@@ -4,7 +4,8 @@ collection: publications
 category: conferences
 permalink: /publication/2026-02-22-embodmocap
 excerpt: 'In-the-wild 4D human-scene reconstruction for embodied agents.'
-date: 2026-02-28
+date: 2026-02-22
+sort_priority: 1
 venue: 'CVPR'
 paperurl: 'https://arxiv.org/pdf/2602.23205'
 citation: 'Wang, Wenjia, Liang Pan, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, Zhouyingcheng Liao, Lei Yang, Rishabh Dabral, Christian Theobalt, and Taku Komura. (2026). "EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents." <i>CVPR</i>.'
