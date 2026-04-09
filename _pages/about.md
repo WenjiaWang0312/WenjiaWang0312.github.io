@@ -79,7 +79,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
 </section>
 
 <section class="home-section home-section--scope">
-  <h2>Research Scope</h2>\
+  <h2>Research Scope</h2>
   
   <!-- <p>My recent work broadly falls into two streams: <strong>Real2Sim</strong> and <strong>Sim2Real</strong>.</p> -->
   <!--
