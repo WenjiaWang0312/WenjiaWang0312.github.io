@@ -9,6 +9,7 @@ venue: 'TPAMI'
 paperurl: 'https://arxiv.org/abs/2403.11111'
 arxivurl: 'https://arxiv.org/abs/2403.11111'
 weburl: 'https://yongtaoge.github.io/projects/humanwild/'
+codeurl: 'https://github.com/YongtaoGe/WildHuman'
 citation: 'Ge, Yongtao, Wenjia Wang, Yongfan Chen, Fanzhou Wang, Lei Yang, Hao Chen, and Chunhua Shen. (2025). "3D Human Reconstruction in the Wild with Synthetic Data Using Generative Models." <i>TPAMI</i>.'
 authors: 'Yongtao Ge, <strong>Wenjia Wang</strong>, Yongfan Chen, Fanzhou Wang, Lei Yang, Hao Chen, Chunhua Shen.'
 bibtex: |
