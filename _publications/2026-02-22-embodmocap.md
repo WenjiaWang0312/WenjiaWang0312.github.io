@@ -12,8 +12,6 @@ citation: 'Wang, Wenjia, Liang Pan, Huaijin Pi, Yuke Lou, Xuqian Ren, Yifan Wu, 
 arxivurl: 'https://arxiv.org/pdf/2602.23205'
 weburl: '/projects/embodmocap/'
 codeurl: 'https://github.com/WenjiaWang0312/EmbodMocap'
-hfurl: 'https://huggingface.co/datasets/WenjiaWang/EmbodMocap_release'
-onedriveurl: 'https://connecthkuhk-my.sharepoint.com/:f:/g/personal/wwj2022_connect_hku_hk/IgAh_tLK24aLT61TePApWqk1AdpvlVBHvyttzmO61fegoC0?e=ikzCTO'
 bibtex: |
   @inproceedings{wang2026embodmocap,
     title={EmbodMocap: In-the-Wild 4D Human-Scene Reconstruction for Embodied Agents},
