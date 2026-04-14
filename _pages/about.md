@@ -9,7 +9,7 @@ redirect_from:
 
 <div class="home-intro">
   <p>I am a fourth-year (final-year) Ph.D. student in the Department of Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
-  <p>During my Ph.D., I worked closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>. I also collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
+  <p>During my Ph.D., I work closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>, and I also did an internship at Shanghai AI Laboratory with <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>. I have also collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents.
 
 In <strong>Real2Sim</strong>, I aim to leverage spatial intelligence models with affordable sensing systems to address generalizable human and scene understanding, enabling the acquisition of high-quality, simulation-ready data without tele-operation.

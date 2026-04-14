@@ -146,6 +146,24 @@ a:hover { text-decoration: underline; }
   display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 .skill-card video { aspect-ratio: 4 / 3; object-fit: cover; }
+.dataset-grid {
+  display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 900px) {
+  .dataset-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 480px) {
+  .dataset-grid { grid-template-columns: 1fr; }
+}
+.dataset-card {
+  background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+  box-shadow: var(--shadow); margin: 0; overflow: hidden; padding: 14px;
+}
+.dataset-card h3 { margin: 0 0 10px; text-align: center; font-size: 1rem; }
+.dataset-card video {
+  display: block; width: 100%; background: #0f1728; border-radius: 10px;
+  aspect-ratio: 3 / 4; object-fit: cover;
+}
 pre {
   background: #f3f4f6; border-radius: 12px; color: #334155; margin: 0; overflow-x: auto; padding: 18px;
 }
