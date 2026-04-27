@@ -23,12 +23,20 @@ is_port_available() {
   ruby -rsocket -e '
     port = Integer(ARGV[0])
     begin
-      server = TCPServer.new("127.0.0.1", port)
-      server.close
-      exit 0
+      server4 = TCPServer.new("127.0.0.1", port)
+      server4.close
     rescue Errno::EADDRINUSE, Errno::EACCES
       exit 1
     end
+
+    begin
+      server6 = TCPServer.new("::1", port)
+      server6.close
+    rescue Errno::EADDRINUSE, Errno::EACCES
+      exit 1
+    end
+
+    exit 0
   ' "$port"
 }
 
@@ -47,6 +55,14 @@ find_available_port() {
 
   return 1
 }
+
+# Initialize rbenv if available so we use the project Ruby version
+if command -v rbenv >/dev/null 2>&1; then
+  eval "$(rbenv init - bash)"
+elif [[ -d "$HOME/.rbenv/bin" ]]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init - bash)"
+fi
 
 cd "$(dirname "$0")"
 echo "Working directory: $(pwd)"
