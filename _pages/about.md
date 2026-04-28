@@ -86,7 +86,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
     <p><strong>Real2Sim</strong>: capturing and reconstructing humans and scenes from real-world data to enable scalable embodied learning (e.g., <a href="/projects/embodmocap/">EmbodMocap</a>).</p>
     <p><strong>Sim2Real</strong>: generating and controlling human-scene interactions in physics-based simulation with better realism and generalization (e.g., <a href="/projects/sims/">SIMS</a>).</p>
   -->
-  <img src="/images/scope.png" alt="Research scope" />
+  <img src="/images/scope.png?v=2" alt="Research scope" />
 </section>
 
 <section class="home-section home-section--collab">
