@@ -20,6 +20,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
 <section class="home-section home-section--news">
   <h2>Recent News</h2>
   <ul>
+    <li><strong>Apr 8, 2026</strong> <span class="home-news-tag home-news-tag--other">[Talk]</span> Gave a <a href="https://www.techbeat.net/talk-info?id=1039">TechBeat</a> talk on EmbodMocap.</li>
     <li><strong>Mar 10, 2026</strong> <span class="home-news-tag home-news-tag--open-source">[Open Source]</span> Open-sourced <a href="https://github.com/WenjiaWang0312/EmbodMocap">EmbodMocap</a>.</li>
     <li><strong>Feb 22, 2026</strong> <span class="home-news-tag home-news-tag--accept">[Accept]</span> <a href="/projects/embodmocap/">EmbodMocap</a> accepted to CVPR 2026.</li>
     <li><strong>Jan 6, 2026</strong> <span class="home-news-tag home-news-tag--project">[Project Page]</span> Project page online for <a href="/projects/embodmocap/">EmbodMocap</a>.</li>
@@ -99,5 +100,12 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
   <ul>
     <li><strong>Teaching Assistant</strong>: COMP7404C (Spring 2024, HKU); COMP3329 (Spring 2024, HKU)</li>
     <li><strong>Conference Reviewer</strong>: ICCV (2023); ICLR (2024–2026); ACCV (2024); SIGGRAPH Asia (2024–2025); CVPR (2025–2026); 3DV (2025–2026); ECCV (2026); SIGGRAPH (2026). <strong>Journal Reviewer</strong>: IEEE TIP (2022).</li>
+  </ul>
+</section>
+
+<section class="home-section home-section--talks">
+  <h2>Invited Talks</h2>
+  <ul>
+    <li><strong>Apr 2026</strong> 低成本易扩展的动态双目场景与动作重建方案, <a href="https://www.techbeat.net/talk-info?id=1039">TechBeat</a> 人工智能社区.</li>
   </ul>
 </section>

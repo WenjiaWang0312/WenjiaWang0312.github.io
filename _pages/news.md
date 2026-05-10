@@ -7,6 +7,7 @@ author_profile: true
 
 News items are listed in reverse chronological order.
 
+- **Apr 8, 2026** <span class="home-news-tag home-news-tag--other">[Talk]</span> Gave a <a href="https://www.techbeat.net/talk-info?id=1039">TechBeat</a> talk on EmbodMocap.
 - **Mar 10, 2026** <span class="home-news-tag home-news-tag--open-source">[Open Source]</span> Open-sourced [EmbodMocap](/projects/embodmocap/).
 - **Feb 27, 2026** <span class="home-news-tag home-news-tag--project">[Project Page]</span> Project page online for [AHAP](/projects/ahap/) (preprint on [arXiv](https://arxiv.org/abs/2602.23951)).
 - **Feb 22, 2026** <span class="home-news-tag home-news-tag--accept">[Accept]</span> [EmbodMocap](/projects/embodmocap/) accepted to CVPR 2026.
