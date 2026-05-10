@@ -64,6 +64,11 @@ elif [[ -d "$HOME/.rbenv/bin" ]]; then
   eval "$(rbenv init - bash)"
 fi
 
+# Also pick up a user-local Ruby installed under ~/.local (e.g. from source build)
+if [[ -d "$HOME/.local/bin" ]] && [[ -x "$HOME/.local/bin/ruby" ]]; then
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 cd "$(dirname "$0")"
 echo "Working directory: $(pwd)"
 
