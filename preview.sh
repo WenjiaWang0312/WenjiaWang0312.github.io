@@ -2,7 +2,7 @@
 set -euo pipefail
 
 HOST="${1:-localhost}"
-REQUESTED_PORT="${2:-4000}"
+REQUESTED_PORT="${port:-${PORT:-${2:-4000}}}"
 DEFAULT_LIVERELOAD_PORT="${LIVERELOAD_PORT:-35729}"
 
 find_bundle_cmd() {
