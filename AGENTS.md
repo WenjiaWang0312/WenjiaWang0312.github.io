@@ -51,6 +51,16 @@ These are local conventions used by the current homepage implementation. Prefer 
 - CV updates: update structured CV content in `_data/cv.json`. Keep `/cv/` aligned with the standard archive content column (left-aligned, not a centered narrow column), so it visually matches `/publications/`.
 - Generated assets: rebuild `assets/js/main.min.js` with `npm run build:js` after changing `assets/js/**`.
 
+## Operational Notes
+- The maintainer usually expects routine content changes to be implemented, validated, committed, and pushed in the same turn.
+- Use concise Chinese status/final messages unless the user asks for English.
+- Be proactive about text quality: check names, spaces, capitalization, punctuation, institution names, dates, and location formatting before committing.
+- CV locations should use `City, Country` when possible. Do not include postal codes unless explicitly requested.
+- Do not invent missing publication metadata such as DOI, ORCID, affiliations, equal contribution notes, or corresponding-author status.
+- For preliminary publication entries, comment out uncertain BibTeX or optional links rather than showing placeholders.
+- If a project already has arXiv, it is acceptable to comment out a duplicate local PDF button when requested.
+- Project page hero buttons should stay compact and ordered by research relevance, usually paper/arXiv first, then conference page such as `CVPR Page`, then code and data links.
+
 ## Project Media Conventions (Video Covers)
 Project microsites often use HTML5 `<video poster="...">` previews. To keep naming consistent:
 
@@ -66,6 +76,13 @@ Use short, factual academic prose. Prefer concise summaries over promotional lan
 
 ## Validation Checklist
 Run `bundle exec jekyll build --destination ./_site` before finishing. Use `./preview.sh` for manual review when layout or content changes are visible. Check `/`, `/publications/`, `/projects/`, and `/cv/`; verify image paths, PDF links, external links, and mobile layout. Run `npm install` once per environment and `npm run build:js` when JavaScript changes.
+
+## Deployment Notes
+- GitHub Pages deploys from the `main` branch through `.github/workflows/pages.yml`.
+- Keep workflow concurrency as `cancel-in-progress: false` so Pages deployments queue instead of canceling each other.
+- If a pushed change is visible in GitHub source but not on the live site, inspect the latest Actions run before assuming the push failed.
+- A failed `actions/deploy-pages` step with "due to in progress deployment" usually means GitHub Pages has a deployment lock. Wait, rerun the latest workflow, or cancel the stuck deployment from GitHub UI if needed.
+- Node.js deprecation warnings in Actions are not necessarily deploy failures; check the actual failed step and error message.
 
 ## Change Safety
 Do not change existing permalinks unless explicitly requested. Do not move files in `files/` or image assets without updating all references. Do not edit generated files by hand when a source file exists. Do not update homepage callouts without checking the matching collection or project page.
