@@ -99,7 +99,8 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
   <h2>Academic Services</h2>
   <ul>
     <li><strong>Teaching Assistant</strong>: COMP7404C (Spring 2024, HKU); COMP3329 (Spring 2024, HKU)</li>
-    <li><strong>Conference Reviewer</strong>: ICCV (2023); ICLR (2024–2026); ACCV (2024); SIGGRAPH Asia (2024–2026); CVPR (2025–2026); 3DV (2025–2026); ECCV (2026); SIGGRAPH (2026); BMVC (2026); NeurIPS E&amp;D Track (2026). <strong>Journal Reviewer</strong>: IEEE TIP (2022).</li>
+    <li><strong>Conference Reviewer</strong>: ICCV (2023); ICLR (2024–2026); ACCV (2024); SIGGRAPH Asia (2024–2026); CVPR (2025–2026); 3DV (2025–2026); ECCV (2026); SIGGRAPH (2026); BMVC (2026); NeurIPS E&amp;D Track (2026).</li>
+    <li><strong>Journal Reviewer</strong>: IEEE TIP (2022).</li>
   </ul>
 </section>
 
