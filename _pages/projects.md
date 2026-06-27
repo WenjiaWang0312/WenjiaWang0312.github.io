@@ -18,7 +18,7 @@ author_profile: true
       {% if mmhuman3d_stats.stars %}
         <p class="project-card__meta">
           <a href="https://github.com/open-mmlab/mmhuman3d/stargazers" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-star" aria-hidden="true"></i>{% include compact-number.html value=mmhuman3d_stats.stars %} stars
+            <i class="fas fa-star" aria-hidden="true"></i>{{ mmhuman3d_stats.stars }} stars
           </a>
         </p>
       {% endif %}
