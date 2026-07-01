@@ -344,8 +344,28 @@ html[data-theme="dark"] .publication-year .list__item + .list__item {
 }
 
 .publication-authors strong {
+  display: inline-block;
+  padding: 0 0.08em;
+  margin: 0 -0.02em;
+  border-radius: 4px;
   font-weight: 700;
   color: var(--global-text-color);
+  text-decoration: underline;
+  text-decoration-color: rgba(26, 115, 232, 0.42);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  transition: background-color 0.16s ease, box-shadow 0.16s ease, transform 0.16s ease;
+}
+
+.publication-authors strong:hover {
+  background: rgba(26, 115, 232, 0.08);
+  box-shadow: 0 3px 8px rgba(26, 115, 232, 0.12);
+  transform: translateY(-1px);
+}
+
+html[data-theme="dark"] .publication-authors strong:hover {
+  background: rgba(118, 169, 250, 0.12);
+  box-shadow: 0 3px 8px rgba(118, 169, 250, 0.12);
 }
 
 .publication-award {
