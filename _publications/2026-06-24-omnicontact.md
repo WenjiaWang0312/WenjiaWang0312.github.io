@@ -5,6 +5,7 @@ category: conferences
 permalink: /publication/2026-06-24-omnicontact
 excerpt: 'A contact-flow interface for chaining humanoid loco-manipulation meta-skills with robust recovery.'
 date: 2026-06-24
+sort_priority: 6
 venue: 'arXiv'
 paperurl: 'https://arxiv.org/pdf/2606.26201'
 citation: 'Yu, Runyi, Xiaoyi Lin, Ji Ma, Yinhuai Wang, Koukou Luo, Jiahao Ji, Huayi Wang, Wenjia Wang, Runhan Zhang, Ping Tan, Ting Wu, Ruoli Dai, Qifeng Chen, and Lei Han. (2026). "OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation." <i>arXiv</i>.'
@@ -23,7 +24,7 @@ bibtex: |
     url={https://arxiv.org/abs/2606.26201}
   }
 header:
-  teaser: '/assets/publications/omnicontact.png'
+  teaser: '/assets/publications/omnicontact.gif'
 authors: 'Runyi Yu*, Xiaoyi Lin*, Ji Ma, Yinhuai Wang<big>✉</big>, Koukou Luo, Jiahao Ji, Huayi Wang, <strong>Wenjia Wang</strong>, Runhan Zhang, Ping Tan, Ting Wu, Ruoli Dai, Qifeng Chen<big>✉</big>, Lei Han<big>✉</big>.'
 award: '(* Equal Contribution, <big>✉</big> Corresponding Author)'
 ---
