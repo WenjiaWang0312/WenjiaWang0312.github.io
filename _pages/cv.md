@@ -18,7 +18,7 @@ redirect_from:
 
 <script>
   document.getElementById('cv-download').addEventListener('click', function (event) {
-    const password = window.prompt('Enter password (hint: cellphone number):');
+    const password = window.prompt('Enter password:');
     if (password !== '18930515152') {
       event.preventDefault();
       if (password !== null) {
