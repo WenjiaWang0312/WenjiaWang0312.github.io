@@ -87,6 +87,20 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Install Tectonic
+        run: |
+          set -euo pipefail
+          tectonic_version="0.17.0"
+          asset_url="https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%40${tectonic_version}/tectonic-${tectonic_version}-x86_64-unknown-linux-gnu.tar.gz"
+          curl -L --fail --retry 3 "$asset_url" -o "$RUNNER_TEMP/tectonic.tar.gz"
+          mkdir -p "$RUNNER_TEMP/tectonic"
+          tar -xzf "$RUNNER_TEMP/tectonic.tar.gz" -C "$RUNNER_TEMP/tectonic"
+          chmod +x "$RUNNER_TEMP/tectonic/tectonic"
+          echo "$RUNNER_TEMP/tectonic" >> "$GITHUB_PATH"
+
+      - name: Build CV PDF
+        run: python3 scripts/build_cv_pdf.py
+
       - name: Build site
         run: bundle exec jekyll build --destination ./_site
 

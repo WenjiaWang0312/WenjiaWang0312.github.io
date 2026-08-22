@@ -1,0 +1,19 @@
+<div class="cv-download-links">
+  <a id="cv-download" href="{{ base_path }}/files/wenjiawang_cv.pdf" class="btn btn--primary" download>Download CV as PDF</a>
+  <span>Password hint: cellphone number</span>
+  {% if include.show_markdown %}
+  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+  {% endif %}
+</div>
+
+<script>
+  document.getElementById('cv-download').addEventListener('click', function (event) {
+    const password = window.prompt('Enter password:');
+    if (password !== '18930515152') {
+      event.preventDefault();
+      if (password !== null) {
+        window.alert('Incorrect password.');
+      }
+    }
+  });
+</script>

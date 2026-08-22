@@ -5,6 +5,16 @@
     Header/contact is shown in the left author sidebar (author_profile: true).
     Keep this template focused on structured CV sections (education/work/etc.).
   {% endcomment %}
+
+  {% if cv.biography.size > 0 %}
+  <!-- Biography -->
+  <div class="cv-section">
+    <h2>Biography</h2>
+    {% for paragraph in cv.biography %}
+    <p class="cv-item-detail">{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  {% endif %}
   
   {% if cv.education.size > 0 %}
   <!-- Education -->
@@ -85,25 +95,26 @@
   </div>
   {% endif %}
   
-  {% if cv.publications.size > 0 %}
+  {% assign cv_publications = site.publications | where: "cv", true | sort: "cv_order" %}
+  {% if cv_publications.size > 0 %}
   <!-- Publications -->
   <div class="cv-section">
     <h2>Publications</h2>
     <ul class="cv-list">
-      {% for publication in cv.publications %}
+      {% for publication in cv_publications %}
       <li class="cv-item">
         <div class="cv-item-header">
-          <div class="cv-item-title">{{ publication.name }}</div>
-          <div class="cv-item-date">{{ publication.releaseDate | slice: 0, 4 }}</div>
+          <div class="cv-item-title">{{ publication.title }}</div>
+          <div class="cv-item-date">{{ publication.date | date: "%Y" }}</div>
         </div>
         <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ publication.publisher }}</div>
-          {% if publication.summary %}
-          <div class="cv-item-detail">{{ publication.summary }}</div>
+          <div class="cv-item-subtitle">{{ publication.venue }}</div>
+          {% if publication.authors %}
+          <div class="cv-item-detail">{{ publication.authors }}</div>
           {% endif %}
-          {% if publication.website %}
+          {% if publication.paperurl %}
           <div class="cv-item-detail">
-            <a href="{{ publication.website }}" target="_blank">View Publication</a>
+            <a href="{{ publication.paperurl }}" target="_blank">View Publication</a>
           </div>
           {% endif %}
         </div>
@@ -193,23 +204,19 @@
   </div>
   {% endif %}
   
-  {% if cv.languages.size > 0 %}
-  <!-- Languages -->
+  {% if cv.academic_service.conference.size > 0 or cv.academic_service.journal.size > 0 %}
+  <!-- Academic Service -->
   <div class="cv-section">
-    <h2>Languages</h2>
-    <ul class="cv-list">
-      {% for language in cv.languages %}
-      <li class="cv-item">
-        <div class="cv-item-content">
-          <div class="cv-item-title">{{ language.language }}</div>
-          <div class="cv-item-detail">{{ language.fluency }}</div>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
+    <h2>Academic Service</h2>
+    {% if cv.academic_service.conference.size > 0 %}
+    <div class="cv-item-detail"><strong>Conference Reviewer:</strong> {{ cv.academic_service.conference | join: ", " }}</div>
+    {% endif %}
+    {% if cv.academic_service.journal.size > 0 %}
+    <div class="cv-item-detail"><strong>Journal Reviewer:</strong> {{ cv.academic_service.journal | join: ", " }}</div>
+    {% endif %}
   </div>
   {% endif %}
-  
+
   {% if cv.interests.size > 0 %}
   <!-- Interests -->
   <div class="cv-section">

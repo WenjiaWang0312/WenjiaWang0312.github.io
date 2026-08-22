@@ -5,6 +5,8 @@ category: conferences
 permalink: /publication/2025-10-04-humanwild
 excerpt: '3D human reconstruction in the wild with synthetic data using generative models.'
 date: 2025-10-04
+cv: true
+cv_order: 4
 venue: 'TPAMI'
 paperurl: 'https://arxiv.org/abs/2403.11111'
 arxivurl: 'https://arxiv.org/abs/2403.11111'
