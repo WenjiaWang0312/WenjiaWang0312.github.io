@@ -1,0 +1,33 @@
+{% assign item = include.item %}
+{% assign venue_type = item.venue_type | default: '' | downcase %}
+{% assign venue_downcase = item.venue | default: '' | downcase %}
+
+{% if venue_type == '' %}
+  {% if venue_downcase contains 'arxiv' or venue_downcase contains 'paper submitted' %}
+    {% assign venue_type = 'preprint' %}
+  {% elsif venue_downcase contains 'tech report' %}
+    {% assign venue_type = 'tech-report' %}
+  {% elsif venue_downcase contains 'tpami' or venue_downcase contains 'ijcv' or venue_downcase contains 'tvcg' or venue_downcase contains 'tog' or venue_downcase contains 'tip' or venue_downcase contains 'tmm' or venue_downcase contains 'journal' %}
+    {% assign venue_type = 'journal' %}
+  {% else %}
+    {% assign venue_type = 'conference' %}
+  {% endif %}
+{% endif %}
+
+{% case venue_type %}
+  {% when 'journal' %}
+    {% assign venue_type_label = 'Journal' %}
+  {% when 'tech-report' %}
+    {% assign venue_type_label = 'Tech Report' %}
+  {% when 'preprint' %}
+    {% assign venue_type_label = 'Preprint' %}
+  {% else %}
+    {% assign venue_type_label = 'Conference' %}
+{% endcase %}
+
+<span class="publication-type-marker publication-type-marker--{{ venue_type }}" role="img" aria-label="{{ venue_type_label }}" title="{{ venue_type_label }}"></span>
+{% if venue_downcase contains 'arxiv' %}
+  <i>{{ item.venue }}</i>, {{ item.date | default: "1900-01-01" | date: "%Y" }}
+{% else %}
+  <i>{{ item.venue_display | default: item.venue }}</i> {{ item.date | default: "1900-01-01" | date: "%Y" }}{% if item.venue_note %}, <span class="publication-note-inline">{{ item.venue_note }}</span>{% endif %}
+{% endif %}

@@ -41,7 +41,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
       <div class="archive__item-body archive__item-body--publication">
         <h3 class="archive__item-title home-featured-title" itemprop="headline">
           <a href="/projects/embodmocap/">EmbodMocap</a>
-          <span class="home-featured-venue"><i>CVPR</i> 2026</span>
+          <span class="home-featured-venue"><span class="publication-type-marker publication-type-marker--conference" role="img" aria-label="Conference" title="Conference"></span><i>CVPR</i> 2026</span>
         </h3>
         <p class="archive__item-excerpt" itemprop="description">In-the-wild 4D human-scene reconstruction for embodied agents.</p>
       </div>
@@ -56,7 +56,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
       <div class="archive__item-body archive__item-body--publication">
         <h3 class="archive__item-title home-featured-title" itemprop="headline">
           <a href="/projects/sims/">SIMS</a>
-          <span class="home-featured-venue"><i>ICCV</i> 2025</span>
+          <span class="home-featured-venue"><span class="publication-type-marker publication-type-marker--conference" role="img" aria-label="Conference" title="Conference"></span><i>ICCV</i> 2025</span>
         </h3>
         <p class="archive__item-excerpt" itemprop="description">Simulating stylized human-scene interactions with retrieval-augmented script generation.</p>
       </div>
@@ -71,7 +71,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
       <div class="archive__item-body archive__item-body--publication">
         <h3 class="archive__item-title home-featured-title" itemprop="headline">
           <a href="/projects/zolly/">Zolly</a>
-          <span class="home-featured-venue"><i>ICCV</i> 2023, <span class="publication-note-inline">Oral 🏆️</span></span>
+          <span class="home-featured-venue"><span class="publication-type-marker publication-type-marker--conference" role="img" aria-label="Conference" title="Conference"></span><i>ICCV</i> 2023, <span class="publication-note-inline">Oral 🏆️</span></span>
         </h3>
         <p class="archive__item-excerpt" itemprop="description">Zoom focal length correctly for perspective-distorted human mesh reconstruction.</p>
       </div>

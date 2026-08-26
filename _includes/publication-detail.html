@@ -32,18 +32,10 @@
     {% endif %}
 
     {% if pub.venue and pub.date %}
-      {% assign venue_downcase = pub.venue | downcase %}
-      {% if venue_downcase contains 'arxiv' %}
-        <p class="publication-meta-line">
-          <strong><i>{{ pub.venue }}</i>, {{ pub.date | default: "1900-01-01" | date: "%Y" }}</strong>
-          {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
-        </p>
-      {% else %}
-        <p class="publication-meta-line">
-          <strong><i>{{ pub.venue_display | default: pub.venue }}</i> {{ pub.date | default: "1900-01-01" | date: "%Y" }}{% if pub.venue_note %}, <span class="publication-note-inline">{{ pub.venue_note }}</span>{% endif %}</strong>
-          {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
-        </p>
-      {% endif %}
+      <p class="publication-meta-line">
+        <strong>{% include publication-venue.html item=pub %}</strong>
+        {% if pub.award %} <span class="publication-note-inline">{{ pub.award }}</span>{% endif %}
+      </p>
     {% endif %}
 
     {% if pub.abstract %}
