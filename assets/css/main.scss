@@ -397,38 +397,34 @@ html[data-theme="dark"] .publication-authors strong:hover {
   font-size: 0.9em;
 }
 
-.publication-type-marker {
-  display: inline-flex;
-  width: 1.25rem;
-  height: 1.25rem;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0.42rem 0.12rem 0;
-  vertical-align: -0.22em;
-  background: #2878b5;
-  border: 1px solid rgba(0, 0, 0, 0.14);
-  border-radius: 2px;
+.publication-type-badge {
+  display: inline-block;
+  margin: 0 0.42rem 0.08rem 0;
+  padding: 0.12rem 0.45rem;
+  vertical-align: 0.04em;
+  background: #438ad0;
+  border-radius: 3px;
   color: #fff;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
 }
 
-.publication-type-marker--conference {
-  background: #2878b5;
+.publication-type-badge--conference {
+  background: #438ad0;
 }
 
-.publication-type-marker--journal {
-  background: #25866f;
+.publication-type-badge--journal {
+  background: #2f9e5b;
 }
 
-.publication-type-marker--tech-report {
-  background: #b55168;
+.publication-type-badge--tech-report {
+  background: #d07832;
 }
 
-.publication-type-marker--preprint {
-  background: #8a6bb9;
+.publication-type-badge--preprint {
+  background: #8a64bd;
 }
 
 .publication-note-inline {

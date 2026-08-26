@@ -11,13 +11,14 @@ class PublicationVenueTest(unittest.TestCase):
         self.assertTrue(template_path.exists(), "missing shared publication venue include")
         template = template_path.read_text(encoding="utf-8")
 
-        self.assertIn("publication-type-marker--{{ venue_type }}", template)
-        self.assertIn("{{ venue_type_marker }}", template)
+        self.assertIn("publication-type-badge--{{ venue_type }}", template)
+        self.assertIn("{{ venue_type_badge }}", template)
+        self.assertNotIn("publication-type-marker", template)
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
             self.assertIn(f"assign venue_type = '{venue_type}'", template)
 
-        for marker in ("C", "J", "T", "P"):
-            self.assertIn(f"assign venue_type_marker = '{marker}'", template)
+        for badge in ("Conf", "Journal", "Tech Report", "Preprint"):
+            self.assertIn(f"assign venue_type_badge = '{badge}'", template)
 
         self.assertIn("contains 'arxiv'", template)
         self.assertIn("contains 'paper submitted'", template)
@@ -34,15 +35,14 @@ class PublicationVenueTest(unittest.TestCase):
 
         homepage = (ROOT / "_pages" / "about.md").read_text(encoding="utf-8")
         self.assertEqual(
-            homepage.count("publication-type-marker publication-type-marker--conference"), 3
+            homepage.count("publication-type-badge publication-type-badge--conference"), 3
         )
 
     def test_publication_marker_styles_define_every_type(self):
         styles = (ROOT / "assets" / "css" / "main.scss").read_text(encoding="utf-8")
 
-        self.assertIn(".publication-type-marker {", styles)
-        self.assertIn("display: inline-flex;", styles)
-        self.assertIn("width: 1.25rem;", styles)
-        self.assertIn("height: 1.25rem;", styles)
+        self.assertIn(".publication-type-badge {", styles)
+        self.assertIn("display: inline-block;", styles)
+        self.assertIn("background: #438ad0;", styles)
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
-            self.assertIn(f".publication-type-marker--{venue_type}", styles)
+            self.assertIn(f".publication-type-badge--{venue_type}", styles)
