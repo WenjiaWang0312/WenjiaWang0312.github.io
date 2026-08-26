@@ -12,8 +12,12 @@ class PublicationVenueTest(unittest.TestCase):
         template = template_path.read_text(encoding="utf-8")
 
         self.assertIn("publication-type-marker--{{ venue_type }}", template)
+        self.assertIn("{{ venue_type_marker }}", template)
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
             self.assertIn(f"assign venue_type = '{venue_type}'", template)
+
+        for marker in ("C", "J", "T", "P"):
+            self.assertIn(f"assign venue_type_marker = '{marker}'", template)
 
         self.assertIn("contains 'arxiv'", template)
         self.assertIn("contains 'paper submitted'", template)
@@ -37,5 +41,8 @@ class PublicationVenueTest(unittest.TestCase):
         styles = (ROOT / "assets" / "css" / "main.scss").read_text(encoding="utf-8")
 
         self.assertIn(".publication-type-marker {", styles)
+        self.assertIn("display: inline-flex;", styles)
+        self.assertIn("width: 1.25rem;", styles)
+        self.assertIn("height: 1.25rem;", styles)
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
             self.assertIn(f".publication-type-marker--{venue_type}", styles)

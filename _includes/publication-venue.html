@@ -17,15 +17,19 @@
 {% case venue_type %}
   {% when 'journal' %}
     {% assign venue_type_label = 'Journal' %}
+    {% assign venue_type_marker = 'J' %}
   {% when 'tech-report' %}
     {% assign venue_type_label = 'Tech Report' %}
+    {% assign venue_type_marker = 'T' %}
   {% when 'preprint' %}
     {% assign venue_type_label = 'Preprint' %}
+    {% assign venue_type_marker = 'P' %}
   {% else %}
     {% assign venue_type_label = 'Conference' %}
+    {% assign venue_type_marker = 'C' %}
 {% endcase %}
 
-<span class="publication-type-marker publication-type-marker--{{ venue_type }}" role="img" aria-label="{{ venue_type_label }}" title="{{ venue_type_label }}"></span>
+<span class="publication-type-marker publication-type-marker--{{ venue_type }}" role="img" aria-label="{{ venue_type_label }}" title="{{ venue_type_label }}">{{ venue_type_marker }}</span>
 {% if venue_downcase contains 'arxiv' %}
   <i>{{ item.venue }}</i>, {{ item.date | default: "1900-01-01" | date: "%Y" }}
 {% else %}
