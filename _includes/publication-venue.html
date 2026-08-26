@@ -18,18 +18,22 @@
   {% when 'journal' %}
     {% assign venue_type_label = 'Journal' %}
     {% assign venue_type_badge = 'Journal' %}
+    {% assign venue_type_color = '#27935a' %}
   {% when 'tech-report' %}
     {% assign venue_type_label = 'Tech Report' %}
     {% assign venue_type_badge = 'Tech Report' %}
+    {% assign venue_type_color = '#bf5066' %}
   {% when 'preprint' %}
     {% assign venue_type_label = 'Preprint' %}
     {% assign venue_type_badge = 'Preprint' %}
+    {% assign venue_type_color = '#e89118' %}
   {% else %}
     {% assign venue_type_label = 'Conference' %}
     {% assign venue_type_badge = 'Conf' %}
+    {% assign venue_type_color = '#2575c4' %}
 {% endcase %}
 
-<span class="publication-type-badge publication-type-badge--{{ venue_type }}" aria-label="{{ venue_type_label }}">{{ venue_type_badge }}</span>
+<span class="publication-type-badge publication-type-badge--{{ venue_type }}" aria-label="{{ venue_type_label }}" style="background: {{ venue_type_color }} !important; color: #fff !important;">{{ venue_type_badge }}</span>
 {% if venue_type == 'tech-report' %}
   {{ item.date | default: "1900-01-01" | date: "%Y" }}
 {% elsif venue_downcase contains 'arxiv' %}

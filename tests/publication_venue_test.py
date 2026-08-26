@@ -14,11 +14,18 @@ class PublicationVenueTest(unittest.TestCase):
         self.assertIn("publication-type-badge--{{ venue_type }}", template)
         self.assertIn("{{ venue_type_badge }}", template)
         self.assertNotIn("publication-type-marker", template)
+        self.assertIn(
+            'style="background: {{ venue_type_color }} !important; color: #fff !important;"',
+            template,
+        )
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
             self.assertIn(f"assign venue_type = '{venue_type}'", template)
 
         for badge in ("Conf", "Journal", "Tech Report", "Preprint"):
             self.assertIn(f"assign venue_type_badge = '{badge}'", template)
+
+        for color in ("#2575c4", "#27935a", "#bf5066", "#e89118"):
+            self.assertIn(f"assign venue_type_color = '{color}'", template)
 
         self.assertIn("contains 'arxiv'", template)
         self.assertIn("contains 'paper submitted'", template)
@@ -43,6 +50,7 @@ class PublicationVenueTest(unittest.TestCase):
 
         self.assertIn(".publication-type-badge {", styles)
         self.assertIn("display: inline-block;", styles)
-        self.assertIn("background: #438ad0;", styles)
+        self.assertIn("background: #2575c4;", styles)
+        self.assertIn("background: #e89118;", styles)
         for venue_type in ("conference", "journal", "tech-report", "preprint"):
             self.assertIn(f".publication-type-badge--{venue_type}", styles)
