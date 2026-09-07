@@ -6,7 +6,7 @@ permalink: /publication/2026-06-24-omnicontact
 excerpt: 'A contact-flow interface for chaining humanoid loco-manipulation meta-skills with robust recovery.'
 date: 2026-06-24
 sort_priority: 6
-venue: 'CoRL 2026'
+venue: 'CoRL'
 paperurl: 'https://arxiv.org/pdf/2606.26201'
 citation: 'Yu, Runyi, Xiaoyi Lin, Ji Ma, Yinhuai Wang, Koukou Luo, Jiahao Ji, Huayi Wang, Wenjia Wang, Runhan Zhang, Ping Tan, Ting Wu, Ruoli Dai, Qifeng Chen, and Lei Han. (2026). "OmniContact: Chaining Meta-Skills via Contact Flow for Generalizable Humanoid Loco-Manipulation." <i>Conference on Robot Learning (CoRL)</i>.'
 pdfurl: 'https://arxiv.org/pdf/2606.26201'
