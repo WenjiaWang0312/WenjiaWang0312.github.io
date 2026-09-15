@@ -95,34 +95,10 @@
   </div>
   {% endif %}
   
-  {% assign cv_publications = site.publications | where: "cv", true | sort: "cv_order" %}
-  {% if cv_publications.size > 0 %}
-  <!-- Publications -->
-  <div class="cv-section">
-    <h2>Publications</h2>
-    <ul class="cv-list">
-      {% for publication in cv_publications %}
-      <li class="cv-item">
-        <div class="cv-item-header">
-          <div class="cv-item-title">{{ publication.title }}</div>
-          <div class="cv-item-date">{{ publication.date | date: "%Y" }}</div>
-        </div>
-        <div class="cv-item-content">
-          <div class="cv-item-subtitle">{{ publication.venue }}</div>
-          {% if publication.authors %}
-          <div class="cv-item-detail">{{ publication.authors }}</div>
-          {% endif %}
-          {% if publication.paperurl %}
-          <div class="cv-item-detail">
-            <a href="{{ publication.paperurl }}" target="_blank">View Publication</a>
-          </div>
-          {% endif %}
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
+  {% comment %}
+    Publications remain available to scripts/build_cv_pdf.py for the downloadable PDF,
+    but are intentionally omitted from the web CV.
+  {% endcomment %}
   
   {% if cv.presentations.size > 0 %}
   <!-- Presentations/Talks -->
