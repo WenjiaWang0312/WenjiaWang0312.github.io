@@ -10,11 +10,13 @@ redirect_from:
 <div class="home-intro">
   <p>I am a final-year Ph.D. student in <a href="https://hku-cg.github.io/">Prof. Taku Komura's group</a> at the University of Hong Kong.</p>
   <p>During my Ph.D., I work closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. I interned at Shanghai AI Laboratory with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, and at Noitom Robotics with <a href="https://www.leihan.org/">Dr. Lei Han</a>. I have collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
+  {% comment %}
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents.
 
 In <strong>Real2Sim</strong>, I aim to leverage spatial intelligence models with affordable sensing systems to address generalizable human and scene understanding, enabling the acquisition of high-quality, simulation-ready data without tele-operation.
 
-In <strong>Sim2Real</strong>, I am interested in developing behavior foundation models for robust humanoid motor control, while using world models toward more general intelligence for humanoid robots.</p>
+  In <strong>Sim2Real</strong>, I am interested in developing behavior foundation models for robust humanoid motor control, while using world models toward more general intelligence for humanoid robots.</p>
+  {% endcomment %}
 </div>
 
 <section class="home-section home-section--news">
@@ -79,6 +81,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
   </div>
 </section>
 
+{% comment %}
 <section class="home-section home-section--scope">
   <h2>Research Scope</h2>
   
@@ -89,6 +92,7 @@ In <strong>Sim2Real</strong>, I am interested in developing behavior foundation 
   -->
   <img src="/images/scope.png?v=3" alt="Research scope" />
 </section>
+{% endcomment %}
 
 <section class="home-section home-section--collab">
   <h2>Openings / Collaboration</h2>
