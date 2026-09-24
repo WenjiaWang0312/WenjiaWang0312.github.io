@@ -10,7 +10,7 @@ redirect_from:
 <div class="home-intro">
   <p>I am a final-year Ph.D. student in <a href="https://hku-cg.github.io/">Prof. Taku Komura's group</a> at the University of Hong Kong.</p>
   <p>During my Ph.D., I work closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. I interned at Shanghai AI Laboratory with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, and at Noitom Robotics with <a href="https://www.leihan.org/">Dr. Lei Han</a>. I have collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
-  <p>I lead research at the Miro-CGVU Joint Lab. We welcome applications for research assistant positions, and strong RAs may be considered for future MPhil or Ph.D. opportunities. If you are interested, please email me at <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a>.</p>
+  <p>I lead research at the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>. We welcome applications for research assistant positions, and strong RAs may be considered for future MPhil or Ph.D. opportunities. If you are interested, please email me at <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a>.</p>
   {% comment %}
   <p>My research focuses on <strong>Real2Sim</strong> and <strong>Sim2Real</strong> for embodied agents.
 

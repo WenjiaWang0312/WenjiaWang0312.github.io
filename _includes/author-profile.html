@@ -7,7 +7,6 @@
 {% assign author_name = cv_basics.name | default: author.name %}
 {% assign author_email = cv_basics.email | default: author.email %}
 {% assign author_location = cv_basics.location.city | default: author.location %}
-{% assign author_website = cv_basics.website | default: author.uri %}
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -34,9 +33,6 @@
       {% endif %}
       {% if author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
-      {% endif %}
-      {% if author_website %}
-        <li><a href="{{ author_website }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author_email %}
         <li><a href="mailto:{{ author_email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
