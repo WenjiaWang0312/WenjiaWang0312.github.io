@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EgoFound3R: End-to-end egocentric hand reconstruction in world space with point-wise interaction attributes."
+    />
+    <meta property="og:title" content="EgoFound3R" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/figures/teaser.webp" />
+    <title>EgoFound3R: End-to-End Egocentric Hand Reconstruction in World Space with Point-Wise Interaction Attributes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-container">
+        <h1>EgoFound3R: End-to-End Egocentric Hand Reconstruction in World Space with Point-Wise Interaction Attributes</h1>
+
+        <div class="authors">
+          <div class="authors-row">
+            <span class="author-name"><a href="https://frank-f2022.github.io/">Hongming Fu</a><sup>1,2</sup></span>
+            <span class="author-name">Jingcheng Shi<sup>2,3</sup></span>
+            <span class="author-name"><a href="https://wenjiawang0312.github.io/">Wenjia Wang</a><sup>4,*</sup></span>
+            <span class="author-name">Binhua Zuo<sup>2,&dagger;</sup></span>
+            <span class="author-name"><a href="https://www.bozhao.me/">Bo Zhao</a><sup>1,&dagger;</sup></span>
+          </div>
+        </div>
+
+        <p class="affiliations">
+          <span><sup>1</sup>School of AI, Shanghai Jiao Tong University</span>
+          <span><sup>2</sup>QuicRobot</span>
+          <span><sup>3</sup>Rutgers University</span>
+          <span><sup>4</sup>The University of Hong Kong</span>
+        </p>
+        <p class="author-note"><sup>*</sup> Initial idea contributor. <sup>&dagger;</sup> Corresponding authors.</p>
+
+        <div class="button-row">
+          <a class="btn btn-arxiv" href="https://arxiv.org/abs/2610.01210" target="_blank" rel="noopener">
+            <i class="ai ai-arxiv"></i><span>arXiv</span>
+          </a>
+          <a class="btn btn-paper" href="assets/EgoFound3R.pdf" target="_blank" rel="noopener">
+            <i class="fas fa-file-pdf"></i><span>PDF</span>
+          </a>
+          <a class="btn btn-github" href="https://github.com/MINT-SJTU/EgoFound3R" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i><span>Code</span>
+          </a>
+          <a class="btn btn-video" href="#demos"><i class="fas fa-video"></i><span>Video</span></a>
+          <a class="btn btn-bibtex" href="#bibtex"><i class="fas fa-quote-right"></i><span>BibTeX</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-tight" id="overview">
+        <div class="container">
+          <figure class="media-card media-card--video">
+            <video class="overview-video" controls playsinline preload="metadata" poster="assets/img/figures/teaser.webp">
+              <source src="videos/overview/overview.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="container narrow">
+          <figure class="media-card media-card--hero">
+            <a href="assets/img/figures/teaser.webp" target="_blank" rel="noopener" title="Open the full-resolution figure">
+              <img src="assets/img/figures/teaser.webp" alt="EgoFound3R teaser figure" width="2800" height="912" fetchpriority="high" />
+            </a>
+            <figcaption>EgoFound3R jointly reconstructs world-space hand geometry and point-wise visibility, contact, and distance attributes from egocentric video.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Abstract</h2>
+          <div class="abstract-card">
+            <p>Egocentric video has become a primary source of supervision for embodied models, and its value rests on recovering hand motion in world coordinates, which camera motion and hand occlusion make difficult. Existing reconstruction pipelines typically separate hand and scene estimation, leave interaction attributes to separate task-specific models, and invoke several models per video, so no prior reconstruction model estimates these attributes and throughput becomes a practical constraint for large-scale annotation. We therefore introduce <strong>EgoFound3R</strong>, a unified end-to-end model that estimates world-space hand geometry in a metric scale shared with the scene, and predicts point-wise interaction attributes, including visibility, contact, and distance.</p>
+            <p>The model integrates three designs: (i) structured hand prompts that transfer pretrained geometric priors to world-space hand reconstruction; (ii) an explicit hand representation that decodes hand geometry and interaction attributes; and (iii) a shared-parameter multi-rate design that lowers inference cost. Together, these designs predict hand geometry and point-wise attributes in one pass. On OakInk-v2, TACO, and HOI4D, EgoFound3R reduces the mean per-joint position error (MPJPE) by 43.2%, 22.4%, and 11.6% over previous methods and predicts point-wise contact and distance alongside the geometry in the same pass, while attaining approximately 6&times; higher throughput.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Key Results</h2>
+          <div class="stats-grid">
+            <div class="stat-card"><p class="stat-kicker">OakInk-v2 MPJPE</p><p class="stat-value">43.2%</p><p class="stat-desc">Reduction over previous methods.</p></div>
+            <div class="stat-card"><p class="stat-kicker">Hand-rate throughput</p><p class="stat-value">28.69 FPS</p><p class="stat-desc">Default configuration at 512&times;512 on one NVIDIA H20.</p></div>
+            <div class="stat-card"><p class="stat-kicker">Unified prediction</p><p class="stat-value">1 pass</p><p class="stat-desc">Geometry, visibility, contact, and distance together.</p></div>
+          </div>
+          <figure class="media-card media-card--efficiency">
+            <a href="assets/img/figures/efficiency.webp" target="_blank" rel="noopener" title="Open the full-resolution figure">
+              <img src="assets/img/figures/efficiency.webp" alt="Inference efficiency comparison" loading="lazy" />
+            </a>
+            <figcaption><strong>Inference efficiency.</strong> Hand-rate throughput against peak GPU memory on one NVIDIA H20.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-muted">
+        <div class="container">
+          <h2>Method Overview</h2>
+          <figure class="media-card media-card--pipeline">
+            <a href="assets/img/figures/framework.webp" target="_blank" rel="noopener" title="Open the full-resolution figure">
+              <img src="assets/img/figures/framework.webp" alt="EgoFound3R framework" loading="lazy" />
+            </a>
+          </figure>
+          <p class="media-caption media-caption--pipeline"><strong>Overview of EgoFound3R.</strong> Structured hand prompts and a prompted VGGT-&Omega; aggregator drive an explicit hand head that decodes hand geometry and interaction attributes, together with scene and metric heads that place the hands in world coordinates.</p>
+        </div>
+      </section>
+
+      <section class="section section-accent" id="demos">
+        <div class="container">
+          <h2>Demo Video</h2>
+          <p class="section-lead">A representative in-the-wild egocentric sequence reconstructed end-to-end by EgoFound3R.</p>
+          <div class="demo-grid">
+            <article class="demo-card">
+              <video controls playsinline muted loop preload="metadata" poster="assets/img/figures/teaser.webp">
+                <source src="videos/demo/0.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p>Demo 01.</p>
+            </article>
+          </div>
+          <p class="section-lead">The original project page contains the complete demo and camera/world-space comparison galleries: <a href="https://mint-sjtu.github.io/EgoFound3R.io/" target="_blank" rel="noopener">EgoFound3R project page</a>.</p>
+        </div>
+      </section>
+
+      <section class="section" id="bibtex">
+        <div class="container narrow">
+          <h2>BibTeX</h2>
+          <div class="code-block">
+            <pre><code>@misc{fu2026egofound3rendtoendegocentrichand,
+  title={EgoFound3R: End-to-End Egocentric Hand Reconstruction in World Space with Point-Wise Interaction Attributes},
+  author={Hongming Fu and Jingcheng Shi and Wenjia Wang and Binhua Zuo and Bo Zhao},
+  year={2026},
+  eprint={2610.01210},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2610.01210}
+}</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container narrow">
+        <p>Project page adapted from the public EgoFound3R materials. Complete demonstrations remain available on the <a href="https://mint-sjtu.github.io/EgoFound3R.io/" target="_blank" rel="noopener">original project page</a>.</p>
+      </div>
+    </footer>
+  </body>
+</html>
