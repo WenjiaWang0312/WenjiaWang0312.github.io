@@ -12,7 +12,7 @@ site_theme               : "default" # The available themes options are "default
 title                    : "Wenjia Wang | 王文佳"
 title_separator          : "-"
 name                     : &name "Wenjia Wang"
-description              : &description "Wenjia Wang's academic homepage"
+description              : &description "Wenjia Wang's research in human-centric perception, human physical foundation models, and unified humanoid control."
 url                      : "https://wenjiawang0312.github.io" # Set this to your final GitHub Pages URL before deployment
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "bio_face.jpg"
   name             : "Wenjia Wang"
   pronouns         : # example: "she/her"  
-  bio              : "Ph.D. student at HKU, working on EmbodiedAI and Computer Graphics"
+  bio              : "Ph.D. student at HKU. Human-centric models and humanoid intelligence."
   location         : "Hong Kong"
   employer         : "The University of Hong Kong"
   uri              : # URL
