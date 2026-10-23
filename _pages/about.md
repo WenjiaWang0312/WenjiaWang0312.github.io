@@ -9,8 +9,9 @@ redirect_from:
 
 <div class="home-intro">
   <p>I am a final-year Ph.D. student in Computer Science at the University of Hong Kong, advised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>, with expected graduation in December 2026.</p>
-  <p>My research spans <strong>human-centric perception models</strong>, <strong>human physical foundation models</strong>, and <strong>unified humanoid control models</strong>. I study how representations of the human body, hands, and interactions can connect perception, motion generation, and physical control, toward humanoid robots that learn transferable skills from human behavior.</p>
-  <p>During my Ph.D., I work closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. I interned at Shanghai AI Laboratory with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a> and <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, and at Noitom Robotics with <a href="https://www.leihan.org/">Dr. Lei Han</a>. I have collaborated with <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a> and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a> at the Max Planck Institute for Informatics.</p>
+  <p>My research follows a connected path from <strong>human-centric perception models</strong> to <strong>human physical foundation models</strong> and <strong>unified humanoid control models</strong>. Starting from geometry- and contact-aware understanding of human bodies, hands, objects, and scenes, I study physical representations that connect perception with motion generation, task-level planning, and control. My long-term goal is to enable humanoid robots to acquire transferable skills from human behavior.</p>
+  <p>My background combines computer science research with engineering training at Tongji University and Nanjing University of Aeronautics and Astronautics. Before my Ph.D., I worked as an algorithm researcher at SenseTime and Tencent. My subsequent research experience includes Shanghai AI Laboratory, Seele AI, and Noitom Robotics.</p>
+  <p>During my Ph.D., I work closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. My collaborators include <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, <a href="https://www.leihan.org/">Dr. Lei Han</a>, <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a>, and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a>. At the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>, I help shape the long-term technical roadmap, connect complementary research projects, and mentor researchers. My focus is on reusable model and system capabilities that connect human perception with robot learning.</p>
   <p>I am seeking <strong>Robotics Research Scientist</strong> opportunities at the intersection of human-centric models and humanoid intelligence. Please <a href="mailto:wwj2022@connect.hku.hk">get in touch</a> if my research could be a good fit for your team.</p>
 </div>
 
@@ -40,22 +41,7 @@ redirect_from:
           <a href="/projects/embodmocap/">EmbodMocap</a>
           <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--conference" aria-label="Conference" style="background: #2575c4 !important; color: #fff !important;">Conf</span><i>CVPR</i> 2026</span>
         </h3>
-        <p class="archive__item-excerpt" itemprop="description">Reconstructs metric-scale human motion and scenes using two moving iPhones, bringing in-the-wild human behavior into a shared 3D world for embodied learning.</p>
-      </div>
-    </article>
-
-    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
-      <div class="archive__item-teaser archive__item-teaser--publication">
-        <a href="https://frank-f2022.github.io/projects/EgoGrasp/">
-          <img src="/assets/publications/egograsp_teaser.png" alt="EgoGrasp hand-object interaction reconstruction" loading="lazy" />
-        </a>
-      </div>
-      <div class="archive__item-body archive__item-body--publication">
-        <h3 class="archive__item-title home-featured-title" itemprop="headline">
-          <a href="https://frank-f2022.github.io/projects/EgoGrasp/">EgoGrasp</a>
-          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--preprint" aria-label="Preprint" style="background: #e89118 !important; color: #fff !important;">Preprint</span><i>arXiv</i> 2026</span>
-        </h3>
-        <p class="archive__item-excerpt" itemprop="description">Recovers world-space hand-object interactions from egocentric video, preserving temporal coherence and contact consistency.</p>
+        <p class="archive__item-excerpt" itemprop="description">Reconstructs human motion and scenes using two moving iPhones, preserving the spatial relationships needed for scene-aware motion tracking and robot learning.</p>
       </div>
     </article>
 
@@ -91,19 +77,10 @@ redirect_from:
   </div>
 </section>
 
-<section class="home-section home-section--scope">
-  <h2>Research Scope</h2>
-  <ul>
-    <li><strong>Human-centric Perception Models.</strong> Recovering body, hand, and object interactions with consistent geometry, scale, and contact across time and viewpoints.</li>
-    <li><strong>Human Physical Foundation Models.</strong> Learning representations that bring together human geometry, motion, and physical interactions, with the goal of supporting generation and control across sensing conditions.</li>
-    <li><strong>Unified Humanoid Control Models.</strong> Connecting motion priors, task-level planning, and physical constraints to study how human skills can transfer to humanoid robots.</li>
-  </ul>
-</section>
-
 <section class="home-section home-section--collaboration">
   <h2>Openings / Collaboration</h2>
-  <p>I lead research at the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>. Our group is open to research collaborations and student projects in human-centric perception, physical representations, and embodied intelligence.</p>
-  <p>We welcome research assistant applications; strong RAs may be considered for future MPhil or Ph.D. opportunities. If you are interested, please email <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a>.</p>
+  <p>I lead research at the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a> and help select research assistants for our group's collaborative projects.</p>
+  <p>Through these projects, we aim to prepare promising students for future MPhil or Ph.D. research in embodied intelligence. If you are interested in joining as a research assistant, please email <a href="mailto:wwj2022@connect.hku.hk">wwj2022@connect.hku.hk</a>.</p>
 </section>
 
 <section class="home-section home-section--services">

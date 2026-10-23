@@ -31,8 +31,8 @@
     ]
   },
   "biography": [
-    "My research spans human-centric perception models, human physical foundation models, and unified humanoid control models. I study shared representations of the human body, hands, motion, and physical interactions to connect perception, motion generation, and control.",
-    "My public work ranges from metric-scale human-scene reconstruction and egocentric hand-object recovery to language-guided, physics-based interaction synthesis. These directions motivate my broader interest in transferring human skills to humanoid robots. I am seeking Robotics Research Scientist opportunities."
+    "My research connects human-centric perception models, human physical foundation models, and unified humanoid control models. I study how geometry, motion, contact, and available sensor observations can form reusable interfaces between perception and physical execution.",
+    "My background combines a Computer Science Ph.D. at HKU with engineering degrees from Tongji University and NUAA, algorithm research at SenseTime and Tencent, and research experience at Shanghai AI Laboratory, Seele AI, and Noitom Robotics. At the Miro-CGVU Joint Lab, I help shape the long-term technical roadmap, connect complementary projects, and mentor researchers. I am seeking Robotics Research Scientist opportunities."
   ],
   "work": [
     {
