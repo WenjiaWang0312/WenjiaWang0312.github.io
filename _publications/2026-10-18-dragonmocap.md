@@ -6,11 +6,11 @@ permalink: /publication/2026-10-18-dragonmocap
 excerpt: 'Language-grounded joint queries and non-parametric retrieval enable monocular motion capture across diverse dragon rigs, with zero-shot adaptation to unseen topologies.'
 date: 2026-10-18
 sort_priority: 9
-venue: 'SIGGRAPH Asia'
+venue: 'SIGGRAPH Asia · Short Paper'
 paperurl: 'https://arxiv.org/pdf/2610.25437'
 arxivurl: 'https://arxiv.org/abs/2610.25437'
 # Project page and code links are omitted until publicly confirmed.
-citation: 'Qing, Zhongfei, Xiaoxiang Zhao, Ling-Hao Chen, Zhongang Cai, Wenjia Wang, Yifan Wu, Qianying Liu, Wei Zeng, Bo Hu, and Songnan Li. (2026). "DragonMoCap: Monocular Video-based Motion Capture for Diverse Dragon Topologies." <i>SIGGRAPH Asia</i>.'
+citation: 'Qing, Zhongfei, Xiaoxiang Zhao, Ling-Hao Chen, Zhongang Cai, Wenjia Wang, Yifan Wu, Qianying Liu, Wei Zeng, Bo Hu, and Songnan Li. (2026). "DragonMoCap: Monocular Video-based Motion Capture for Diverse Dragon Topologies." <i>SIGGRAPH Asia Short Papers</i>.'
 bibtex: |
   @misc{qing2026dragonmocap,
     title={DragonMoCap: Monocular Video-based Motion Capture for Diverse Dragon Topologies},
