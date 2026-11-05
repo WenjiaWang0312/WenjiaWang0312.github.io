@@ -17,6 +17,7 @@ redirect_from:
 <section class="home-section home-section--news">
   <h2>Recent News</h2>
   <ul>
+    <li><strong>Nov 5, 2026</strong> <span class="home-news-tag home-news-tag--other">[Ph.D. Defense]</span> Successfully defended my Ph.D. thesis at HKU. You can now call me Dr. Wang!</li>
     <li><strong>Apr 8, 2026</strong> <span class="home-news-tag home-news-tag--other">[Talk]</span> Gave a <a href="https://www.techbeat.net/talk-info?id=1039">TechBeat</a> talk on EmbodMocap.</li>
     <li><strong>Mar 10, 2026</strong> <span class="home-news-tag home-news-tag--open-source">[Open Source]</span> Open-sourced <a href="https://github.com/WenjiaWang0312/EmbodMocap">EmbodMocap</a>.</li>
     <li><strong>Feb 22, 2026</strong> <span class="home-news-tag home-news-tag--accept">[Accept]</span> <a href="/projects/embodmocap/">EmbodMocap</a> accepted to CVPR 2026.</li>

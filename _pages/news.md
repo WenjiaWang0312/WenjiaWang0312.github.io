@@ -7,6 +7,7 @@ author_profile: true
 
 News items are listed in reverse chronological order.
 
+- **Nov 5, 2026** <span class="home-news-tag home-news-tag--other">[Ph.D. Defense]</span> Successfully defended my Ph.D. thesis at HKU. You can now call me Dr. Wang!
 - **Apr 8, 2026** <span class="home-news-tag home-news-tag--other">[Talk]</span> Gave a <a href="https://www.techbeat.net/talk-info?id=1039">TechBeat</a> talk on EmbodMocap.
 - **Mar 10, 2026** <span class="home-news-tag home-news-tag--open-source">[Open Source]</span> Open-sourced [EmbodMocap](/projects/embodmocap/).
 - **Feb 27, 2026** <span class="home-news-tag home-news-tag--project">[Project Page]</span> Project page online for [AHAP](/projects/ahap/) (preprint on [arXiv](https://arxiv.org/abs/2602.23951)).
