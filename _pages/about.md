@@ -9,7 +9,6 @@ redirect_from:
 
 <div class="home-intro">
   <p>I am a researcher working on human-centric models and humanoid intelligence. I obtained my Ph.D. in Computer Science from the University of Hong Kong in November 2026, under the supervision of <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
-  <p>My research follows a connected path from <strong>human-centric perception models</strong> to <strong>human physical foundation models</strong> and <strong>unified humanoid control models</strong>. Starting from geometry- and contact-aware understanding of human bodies, hands, objects, and scenes, I study physical representations that connect perception with motion generation, task-level planning, and control. My long-term goal is to enable humanoid robots to acquire transferable skills from human behavior.</p>
   <!--
   <p>During my Ph.D., I worked closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. My collaborators include <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, <a href="https://www.leihan.org/">Dr. Lei Han</a>, <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a>, and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a>. At the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>, I help shape the long-term technical roadmap, connect complementary research projects, and mentor researchers. My focus is on reusable model and system capabilities that connect human perception with robot learning.</p>
   -->
@@ -17,6 +16,25 @@ redirect_from:
   <p>I am seeking <strong>researcher opportunities</strong> at the intersection of human-centric models and humanoid intelligence. Please <a href="mailto:wwj2022@connect.hku.hk">get in touch</a> if my research could be a good fit for your team.</p>
   -->
 </div>
+
+<link rel="stylesheet" href="/assets/css/research-themes.css" />
+<section class="home-section research-themes" aria-labelledby="research-themes-title">
+  <h2 id="research-themes-title">Research Themes</h2>
+  <p class="research-themes-intro">My research connects human prior models, world models, and humanoid intelligence.</p>
+  <div class="research-themes-grid"><article class="research-theme-card" aria-label="Human Prior Model">
+  <div class="research-theme-media"><a class="research-theme-frame" href="/projects/embodmocap/"><img src="/projects/embodmocap/teaser.jpg" alt="EmbodMocap research results" loading="lazy" /></a><a class="research-theme-frame" href="/projects/zolly/"><img src="/assets/publications/zolly.jpg" alt="Zolly research results" loading="lazy" /></a><a class="research-theme-frame" href="https://yongtaoge.github.io/projects/humanwild/"><img src="/assets/publications/humanwild.png" alt="HumanWild research results" loading="lazy" /></a><a class="research-theme-frame" href="https://caizhongang.github.io/projects/HuMMan/"><img src="/assets/publications/humman.jpg" alt="HuMMan research results" loading="lazy" /></a><a class="research-theme-frame" href="https://noitom-robotics.github.io/hiphi/"><img src="/assets/publications/hiphi.webp" alt="HiPHI research results" loading="lazy" /></a><div class="research-theme-frame" aria-hidden="true"></div></div>
+  <div class="research-theme-copy"><h3>Human Prior Model</h3><p class="research-theme-description">Learning human representations from perception, motion and physical interactions.</p></div>
+</article>
+<article class="research-theme-card" aria-label="World Model">
+  <div class="research-theme-media"><a class="research-theme-frame" href="/publication/2026-05-25-4world"><img src="/assets/publications/4world.jpg" alt="4World research results" loading="lazy" /></a><a class="research-theme-frame" href="/publication/2026-05-25-gated-voronoi-transformers"><img src="/assets/publications/id_anchor.jpg" alt="Gated Voronoi Transformers research results" loading="lazy" /></a></div>
+  <div class="research-theme-copy"><h3>World Model</h3><p class="research-theme-description">Modeling 3D worlds and characters through generative dynamics and animation.</p></div>
+</article>
+<article class="research-theme-card" aria-label="Humanoid Intelligence">
+  <div class="research-theme-media"><a class="research-theme-frame" href="https://liangpan99.github.io/TokenHSI/"><img src="/assets/publications/tokenhsi.png" alt="TokenHSI research results" loading="lazy" /></a><a class="research-theme-frame" href="/projects/sims/"><img src="/assets/publications/sims.png" alt="SIMS research results" loading="lazy" /></a><a class="research-theme-frame" href="https://omnicontact.github.io/"><img src="/assets/publications/omnicontact.gif" alt="OmniContact research results" loading="lazy" /></a></div>
+  <div class="research-theme-copy"><h3>Humanoid Intelligence</h3><p class="research-theme-description">Learning human-scene interaction, task planning and physically grounded whole-body behavior.</p></div>
+</article></div>
+</section>
+
 
 <section class="home-section home-section--news">
   <h2>Recent News</h2>
