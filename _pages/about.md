@@ -28,11 +28,11 @@ redirect_from:
 </article>
 <article class="research-theme-card" aria-label="World Model">
   <div class="research-theme-media"><a class="research-theme-frame" href="/publication/2026-05-25-4world"><img src="/assets/publications/4world.jpg" alt="4World research results" loading="lazy" /></a><a class="research-theme-frame" href="/publication/2026-05-25-gated-voronoi-transformers"><img src="/assets/publications/id_anchor.jpg" alt="Gated Voronoi Transformers research results" loading="lazy" /></a></div>
-  <div class="research-theme-copy"><h3>World Model</h3><p class="research-theme-description">Modeling 3D worlds and characters through generative dynamics and animation.</p></div>
+  <div class="research-theme-copy"><h3>World Model</h3><p class="research-theme-description">Learning generative models of visual worlds, capturing scene dynamics and character motion.</p></div>
 </article>
 <article class="research-theme-card" aria-label="Humanoid Intelligence">
   <div class="research-theme-media"><a class="research-theme-frame" href="/projects/embodmocap/"><img src="/projects/embodmocap/teaser.jpg" alt="EmbodMocap research results" loading="lazy" /></a><a class="research-theme-frame" href="https://liangpan99.github.io/TokenHSI/"><img src="/assets/publications/tokenhsi.png" alt="TokenHSI research results" loading="lazy" /></a><a class="research-theme-frame" href="/projects/sims/"><img src="/assets/publications/sims.png" alt="SIMS research results" loading="lazy" /></a><a class="research-theme-frame" href="https://omnicontact.github.io/"><img src="/assets/publications/omnicontact.gif" alt="OmniContact research results" loading="lazy" /></a></div>
-  <div class="research-theme-copy"><h3>Humanoid Intelligence</h3><p class="research-theme-description">Learning human-scene interaction, task planning and physically grounded whole-body behavior.</p></div>
+  <div class="research-theme-copy"><h3>Humanoid Intelligence</h3><p class="research-theme-description">Learning multimodal interaction, task planning and physically grounded whole-body behavior.</p></div>
 </article></div>
 </section>
 
