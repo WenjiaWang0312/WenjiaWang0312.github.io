@@ -1,5 +1,6 @@
 @media(min-width:1024px){body:has(.research-themes) #main{max-width:1600px;width:100%;box-sizing:border-box}body:has(.research-themes) .sidebar{width:220px;max-width:220px}body:has(.research-themes) .page{width:calc(100% - 252px);margin-left:0;padding:0;box-sizing:border-box}}
 .research-themes{scroll-margin-top:85px}
+.home-featured-list{margin-left:0;margin-right:auto}
 .research-themes-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:24px 0}
 .research-theme-card{min-width:0;display:flex;flex-direction:column}
 .research-theme-media{aspect-ratio:4/3;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;gap:2px;background:#fff;overflow:hidden;border-radius:4px}

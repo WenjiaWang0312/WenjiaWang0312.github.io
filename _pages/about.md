@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div class="home-intro">
-  <p>I am a researcher working on human-centric models and humanoid intelligence. I obtained my Ph.D. in Computer Science from the University of Hong Kong in November 2026, under the supervision of <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
+  <p>I am a researcher working on human prior models, world models, and humanoid intelligence. I obtained my Ph.D. in Computer Science from the University of Hong Kong in November 2026, supervised by <a href="https://hku-cg.github.io/">Prof. Taku Komura</a>.</p>
   <p>At the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>, I lead research and recruit and mentor research assistants for collaborative projects in embodied intelligence, offering opportunities to prepare for future MPhil or Ph.D. study. Please contact me if you are interested.</p>
   <!--
   <p>During my Ph.D., I worked closely with <a href="https://scholar.google.com/citations?user=jZH2IPYAAAAJ&amp;hl=en">Dr. Lei Yang</a>. My collaborators include <a href="https://wangjingbo1219.github.io/">Dr. Jingbo Wang</a>, <a href="https://www.leihan.org/">Dr. Lei Han</a>, <a href="https://rishabhdabral.github.io/">Dr. Rishabh Dabral</a>, and <a href="https://people.mpi-inf.mpg.de/~theobalt/">Prof. Christian Theobalt</a>. At the <a href="https://hku-cg.github.io/mirod-lab/">Miro-CGVU Joint Lab</a>, I help shape the long-term technical roadmap, connect complementary research projects, and mentor researchers. My focus is on reusable model and system capabilities that connect human perception with robot learning.</p>
