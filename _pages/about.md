@@ -55,6 +55,19 @@ redirect_from:
   <div class="home-featured-list">
     <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
       <div class="archive__item-teaser archive__item-teaser--publication">
+        <img src="/assets/publications/surfomo.png" alt="SurFoMo teaser" loading="lazy" />
+      </div>
+      <div class="archive__item-body archive__item-body--publication">
+        <h3 class="archive__item-title home-featured-title" itemprop="headline">
+          SurFoMo
+          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--tech-report" aria-label="Tech Report" style="background: #f07848 !important; color: #fff !important;">Tech Report</span> 2026</span>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">A surface foundation model that unifies heterogeneous sensor observations through a structured human physical interface for motion recovery and humanoid interaction.</p>
+      </div>
+    </article>
+
+    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser archive__item-teaser--publication">
         <img src="/assets/publications/mirohand.png" alt="MiroHand teaser" loading="lazy" />
       </div>
       <div class="archive__item-body archive__item-body--publication">
