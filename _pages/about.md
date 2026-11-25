@@ -55,6 +55,32 @@ redirect_from:
   <div class="home-featured-list">
     <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
       <div class="archive__item-teaser archive__item-teaser--publication">
+        <img src="/assets/publications/mirohand.png" alt="MiroHand teaser" loading="lazy" />
+      </div>
+      <div class="archive__item-body archive__item-body--publication">
+        <h3 class="archive__item-title home-featured-title" itemprop="headline">
+          MiroHand
+          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--tech-report" aria-label="Tech Report" style="background: #f07848 !important; color: #fff !important;">Tech Report</span> 2026</span>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">A unified multimodal model for egocentric hand reconstruction, combining RGB, depth, and camera geometry with an agentic synthetic-data engine.</p>
+      </div>
+    </article>
+
+    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser archive__item-teaser--publication">
+        <img src="/assets/publications/mirocap.png" alt="MiroCap teaser" loading="lazy" />
+      </div>
+      <div class="archive__item-body archive__item-body--publication">
+        <h3 class="archive__item-title home-featured-title" itemprop="headline">
+          MiroCap
+          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--tech-report" aria-label="Tech Report" style="background: #f07848 !important; color: #fff !important;">Tech Report</span> 2026</span>
+        </h3>
+        <p class="archive__item-excerpt" itemprop="description">A portable human-to-robot data system that reconstructs whole-body human-object-scene interactions and transfers them across robot embodiments for loco-manipulation learning.</p>
+      </div>
+    </article>
+
+    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
+      <div class="archive__item-teaser archive__item-teaser--publication">
         <a href="/projects/embodmocap/">
           <img src="/projects/embodmocap/teaser.jpg" alt="EmbodMocap teaser" loading="lazy" />
         </a>
@@ -65,36 +91,6 @@ redirect_from:
           <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--conference" aria-label="Conference" style="background: #2575c4 !important; color: #fff !important;">Conf</span><i>CVPR</i> 2026</span>
         </h3>
         <p class="archive__item-excerpt" itemprop="description">Reconstructs human motion and scenes using two moving iPhones, preserving the spatial relationships needed for scene-aware motion tracking and robot learning.</p>
-      </div>
-    </article>
-
-    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
-      <div class="archive__item-teaser archive__item-teaser--publication">
-        <a href="/projects/sims/">
-          <img src="/projects/sims/sims_teaser.png" alt="SIMS teaser" loading="lazy" />
-        </a>
-      </div>
-      <div class="archive__item-body archive__item-body--publication">
-        <h3 class="archive__item-title home-featured-title" itemprop="headline">
-          <a href="/projects/sims/">SIMS</a>
-          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--conference" aria-label="Conference" style="background: #2575c4 !important; color: #fff !important;">Conf</span><i>ICCV</i> 2025</span>
-        </h3>
-        <p class="archive__item-excerpt" itemprop="description">Connects high-level planning with physics-based control through retrieval-augmented LLM scripts for long-horizon, stylized human-scene interactions.</p>
-      </div>
-    </article>
-
-    <article class="archive__item archive__item--publication home-featured-item" itemscope itemtype="http://schema.org/CreativeWork">
-      <div class="archive__item-teaser archive__item-teaser--publication">
-        <a href="/projects/zolly/">
-          <img src="/projects/zolly/zolly_teaser.png" alt="Zolly teaser" loading="lazy" />
-        </a>
-      </div>
-      <div class="archive__item-body archive__item-body--publication">
-        <h3 class="archive__item-title home-featured-title" itemprop="headline">
-          <a href="/projects/zolly/">Zolly</a>
-          <span class="home-featured-venue"><span class="publication-type-badge publication-type-badge--conference" aria-label="Conference" style="background: #2575c4 !important; color: #fff !important;">Conf</span><i>ICCV</i> 2023, <span class="publication-note-inline">Oral 🏆️</span></span>
-        </h3>
-        <p class="archive__item-excerpt" itemprop="description">Introduces distortion-aware representations and camera modeling for accurate human mesh recovery from perspective-distorted images.</p>
       </div>
     </article>
   </div>

@@ -1,4 +1,10 @@
-{% if include.item.arxivurl or include.item.pdfurl or include.item.paperurl or include.item.weburl or include.item.codeurl or include.item.hfurl or include.item.onedriveurl or include.item.bibtexurl or include.item.bibtex %}
+{% if include.item.resources_tbd %}
+<div class="publication-links">
+  <span><i class="fas fa-file-alt" aria-hidden="true"></i> Paper: TBD</span>
+  <span><i class="fas fa-globe" aria-hidden="true"></i> Project Page: TBD</span>
+  <span><i class="fab fa-github" aria-hidden="true"></i> GitHub: TBD</span>
+</div>
+{% elsif include.item.arxivurl or include.item.pdfurl or include.item.paperurl or include.item.weburl or include.item.codeurl or include.item.hfurl or include.item.onedriveurl or include.item.bibtexurl or include.item.bibtex %}
 <div class="publication-links">
   {% if include.item.arxivurl %}<a href="{{ include.item.arxivurl }}" target="_blank" rel="noopener noreferrer"><i class="ai ai-arxiv ai-fw"></i> arXiv</a>{% endif %}
   {% if include.item.pdfurl %}<a href="{{ include.item.pdfurl }}" target="_blank" rel="noopener noreferrer">{% if include.item.pdfurl contains "arxiv.org" %}<i class="ai ai-arxiv ai-fw"></i> arXiv{% else %}<i class="fas fa-file-pdf"></i> PDF{% endif %}</a>{% endif %}
